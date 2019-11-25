@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit - Article</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+     <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/myStyle.css" rel="stylesheet">
+
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Nunito:400,700" rel="stylesheet">
+    
+    <style>
+        #fbComments span {
+            height: 650px !important;
+        }
+        
+        iframe {
+            display: table-row !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+
+<body class="boxed">
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=377653569255118';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+            <img src="https://gazef.s3.amazonaws.com/Swapit/loading.gif" style="margin-top: -250px;margin-left: 135px;"/>
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top"><i class="icon icon-arrow-up"></i></a>
+        <!-- /Back To Top -->
+    </div>
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+
+            {% include 'header.html' %}
+
+            <br> <br> <br>
+            <!-- Page Content -->
+            <main class="page-main">
+                <div class="container">
+                    <!-- Page Title -->
+                    <div class="page-title">
+                        <div class="title center">
+                            <h1>Article</h1>
+                        </div>
+                        <div class="text-wrapper">
+                            <p class="text-center">We’re a team of creative and make amazing site in ecommerce from Unite States. We love colour pastel, highlight and
+                                <br/>simple, its make our design look so awesome</p>
+                        </div>
+                    </div>
+                    <!-- /Page Title -->
+                    <!-- Two columns -->
+                    <div class="row">
+                        <!-- Center column -->
+                        <div class="col-md-8">
+                            <div class="blog-post">
+                                <div class="blog-photo">
+                                    <img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/blog-single-post.jpg" alt="Blog Single">
+                                </div>
+                                <div class="blog-content">
+                                    <h2 class="blog-title">{{ article.title }}</h2>
+                                    <div class="blog-meta">
+                                        <div class="pull-left">
+                                            <span>{{ article.title }}</span>
+                                            <span>{{ post.date_created|date:"M d, Y" }}</span>
+                                            <span>Adventures By <a href="#">{{ article.author }}</a></span>
+                                            <span class="last"><a href="#">Comments</a></span>
+                                        </div>
+                                        <div class="pull-right">
+                                            <div class="share-button toRight">
+                                                <span class="toggle">Share</span>
+                                                <ul class="social-list">
+                                                    <li>
+                                                        <a href="#" class="icon icon-google google"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon icon-fancy fancy"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon icon-pinterest pinterest"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon icon-twitter-logo twitter"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="icon icon-facebook-logo facebook"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-text">
+                                        {% for section in article.section_set.all %}
+                                            {% if section.type == 'paragraph' %}
+                                                <p>{{ section.text }}</p>
+                                            {% elif section.type == 'quote' %}
+                                                <p class="blockquote">{{ section.text }}</p>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="blog-tags">
+                                        <div class="pull-left">
+                                            <span>TAGS</span>
+                                            <ul class="tags">
+                                                <li><a href="#"><span class="value"><span>Dresses</span></span></a></li>
+                                                <li><a href="#"><span class="value"><span>Outerwear</span></span></a></li>
+                                                <li><a href="#"><span class="value"><span>Tops</span></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>POST COMMENTS</h3>
+
+                                    </div>
+                                    <div id="fbComments">
+                                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Center column -->
+                        <!-- Right column -->
+                        <div class="col-md-4">
+                            <div class="sideblock">
+                                <h2>Instagramm</h2>
+                                <div class="instagramm-feed">
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-01.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-02.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-03.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-04.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-05.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-06.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-07.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-08.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-09.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-10.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-11.jpg" alt="" /></a>
+                                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/blog/instagram-12.jpg" alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="sideblock">
+                                <h2>Featured Products</h2>
+                                <div class="instagramm-feed">
+                                    {% for product in products %}
+                                    <a href="/product/?id={{ product.id }}">
+                                        <img src="{{ product.image_set.first.image.url }}" alt="Product Image" />
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /Right column -->
+                    </div>
+                    <!-- /Two columns -->
+                </div>
+            </main>
+            <!-- /Page Content -->
+
+            {% include 'footer.html' %}
+
+        </div>
+        <!-- Page Content -->
+    </div>
+
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150431712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150431712-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>

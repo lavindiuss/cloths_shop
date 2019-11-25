@@ -1,0 +1,437 @@
+this.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit - Register</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/myStyle.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,700" rel="stylesheet">
+    <style>
+        .facebook {
+            cursor: pointer !important;
+            padding: 0px 30px !important;
+            margin-left: 30% !important;
+            background-color: #4267b2 !important;
+            color: #fff !important;
+            font-family: Helvetica, Arial, sans-serif !important;
+            letter-spacing: .25px !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+            margin: auto !important;
+            border-color: transparent !important;
+            margin-left: 25% !important;
+        }
+        
+        .facebook:hover {
+            padding: 0px 30px !important;
+            margin-left: 30% !important;
+            background-color: #4267b2 !important;
+            color: #fff !important;
+            font-family: Helvetica, Arial, sans-serif !important;
+            letter-spacing: .25px !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+            margin: auto;
+            border-color: transparent !important;
+            margin-left: 25% !important;
+        }
+        
+        svg {
+            position: absolute;
+        }
+        
+        .fb-login-button {
+            line-height: 2.28 !important;
+            margin-left: 2%;
+        }
+    </style>
+</head>
+
+<body class="boxed">
+    <div id="fb-root"></div>
+
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div class="cube-wrapper">
+            <div class="cube-folding">
+                <span class="leaf1"></span>
+                <span class="leaf2"></span>
+                <span class="leaf3"></span>
+                <span class="leaf4"></span>
+            </div>
+        </div>
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top"><i class="icon icon-arrow-up"></i></a>
+        <!-- /Back To Top -->
+    </div>
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+
+            {% include 'header.html' %}
+
+            <!-- Sidebar -->
+            <div class="sidebar-wrapper">
+                <div class="sidebar-top"><a href="#" class="slidepanel-toggle"><i
+                            class="icon icon-left-arrow-circular"></i></a></div>
+                <ul class="sidebar-nav">
+                    <li> <a href="index.html">HOME</a> </li>
+                    <li> <a href="gallery.html">GALLERY</a> </li>
+                    <li> <a href="blog.html">BLOG</a> </li>
+                    <li> <a href="category-fixed-sidebar.html">SHOP</a> </li>
+                    <li> <a href="faq.html">FAQ</a> </li>
+                    <li> <a href="contact.html">CONTACT</a> </li>
+                </ul>
+                <div class="sidebar-bot">
+                    <div class="share-button toTop">
+                        <span class="toggle"></span>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="icon icon-google google"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-fancy fancy"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-pinterest pinterest"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-twitter-logo twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-facebook-logo facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /Sidebar -->
+            <!-- Page Content -->
+            <main class="page-main">
+                <div class="block">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li><a href="index.html"><i class="icon icon-home"></i></a></li>
+                            <li>/<span>Register</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+                        <div class="form-card">
+                            <h3>Personal Information</h3>
+                            <form class="account-create" action="/signup/" method="post">
+                                {% csrf_token %}
+
+                                <label for="username">User Name<span class="required">*</span></label>
+                                <input type="text" class="form-control input-lg" id="username" name="username">
+
+                                <label for="first_name">First Name<span class="required">*</span></label>
+                                <input type="text" class="form-control input-lg" id="first_name" name="first_name">
+
+                                <label for="last_name">Last Name<span class="required">*</span></label>
+                                <input type="text" class="form-control input-lg" id="last_name" name="last_name">
+
+                                <label for="email">E-mail<span class="required">*</span></label>
+                                <input type="email" class="form-control input-lg" id="email" name="email">
+
+                                <label for="password">Password<span class="required">*</span></label>
+                                <input type="password" class="form-control input-lg" id="password" name="password">
+                                <div>
+                                    <button class="btn btn-lg" type="submit">Create</button><span class="required-text">* Required Fields</span>
+
+
+                                    <div class="fb-login-button" data-scope="public_profile,email" data-onlogin="fbLoggedIn()" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false" type="submit"></div>
+
+                                </div>
+                                <div class="back">or <a href="#">Return to Store <i class="icon icon-undo"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- /Page Content -->
+
+            {% include 'footer.html' %}
+
+        </div>
+        <!-- Page Content -->
+    </div>
+    <!-- ProductStack -->
+    <div class="productStack disable hide_on_scroll"> <a href="#" class="toggleStack"><i class="icon icon-cart"></i> (6)
+            items</a>
+        <div class="productstack-content">
+            <div class="products-list-wrapper">
+                <ul class="products-list">
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-10.jpg" alt=""></a>
+                        <span class="item-qty">3</span>
+                        <div class="actions"> <a href="#" class="action edit" title="Edit item"><i
+                                    class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-11.jpg" alt=""></a>
+                        <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i
+                                    class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-12.jpg" alt=""></a>
+                        <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i
+                                    class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-13.jpg" alt=""></a>
+                        <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i
+                                    class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-14.jpg" alt=""></a>
+                        <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i
+                                    class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-15.jpg" alt=""></a>
+                        <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i
+                                    class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-cart">
+                <button type="button" class="btn" title="Checkout"> <span>Checkout</span> </button>
+                <button type="button" class="btn" title="Go to Cart"> <span>Go to Cart</span> </button>
+            </div>
+            <div class="total-cart">
+                <div class="items-total">Items <span class="count">6</span></div>
+                <div class="subtotal">Subtotal <span class="price">2.150</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- /ProductStack -->
+
+    <!-- Modal Quick View -->
+    <div class="modal quick-view zoom" id="quickView">
+        <div class="modal-dialog">
+            <div class="modalLoader-wrapper">
+                <div class="modalLoader bg-striped"></div>
+            </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10006;</button>
+            </div>
+            <div class="modal-content">
+                <iframe></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Quick View -->
+
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=663248937478868&autoLogAppEvents=1"></script>
+
+    <script>
+        var email;
+        var name;
+        var id;
+        $(function() {
+            $("#first_name").val(localStorage.getItem("first_name"));
+            $("#last_name").val(localStorage.getItem("last_name"));
+            $("#email").val(localStorage.getItem("email"));
+        });
+
+
+
+        function fbLoggedIn() {
+            FB.api('/me?fields=email,name', (data) => {
+                this.email = data.email;
+                this.name = data.name;
+                this.id = data.id;
+
+                console.log('this is data', data);
+
+                var token = '{{csrf_token}}';
+                $.ajax({
+                        headers: {
+                            "X-CSRFToken": token
+                        },
+                        url: 'https://swapitclothing.com/login-with-facebook/',
+                        method: "POST",
+                        data: {
+                            password: this.id,
+                            email: this.email,
+                            username: this.name
+                        }
+
+
+
+                    })
+                    .then(function(response) {
+                            console.log('ahmed success');
+                        },
+                        function(response) { // optional
+                            console.log('failed');
+                        });
+
+
+            });
+            setTimeout(() => {
+                location.reload(true);
+                window.location.href = 'https://swapitclothing.com/';
+
+
+            }, 5000);
+
+        }
+
+    </script>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- <script>
+        var FB;
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '663248937478868',
+                cookie: true,
+                xfbml: true,
+                version: 'v3.3'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+        function login() {
+
+            FB.login((data) => {
+                if (data.status === "connected") {
+                    FB.api('/me?fields=email,name', (data) => {
+                        console.log('this is data', data);
+
+                    });
+                }
+            }, {
+                scope: 'public_profile,email'
+            });
+
+        }
+    </script> -->
+
+</body>
+
+</html>

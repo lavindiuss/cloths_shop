@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit - Contact us</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/myStyle.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Nunito:400,700" rel="stylesheet">
+
+    
+    <style>
+    .simple-list.contact *{
+        font-size: 20px !important;
+        color:white !important;
+        line-height:2;
+    }
+    .page-main > .block:first-child, .page-main > div.container:first-child {
+    padding-top: 0 !important;
+    padding-bottom: 0px !important;
+   
+    }
+#googleMap{
+    margin-bottom: 0 !important
+    }
+    .whatsapp{
+        margin-right: 10px;
+        filter: invert(100%);
+        width: 20px;
+    }
+
+    #contactform input,#contactform textarea{
+        opacity: .7;
+    }
+
+    .address-block{
+        border-bottom: none !important;
+    }
+
+    p.slogan{
+        font-size: 32px;
+        color: white;
+    }
+
+    .slogan-container{
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        text-align: right;
+    }
+    </style>
+
+</head>
+
+<body class="boxed">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+            <img src="https://gazef.s3.amazonaws.com/Swapit/loading.gif" style="margin-top: -250px;margin-left: 135px;"/>
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top"><i class="icon icon-arrow-up"></i></a>
+        <!-- /Back To Top -->
+    </div>
+
+        {% include 'header.html' %}
+        <!-- <br><br> -->
+        <div style="background:url('https://gazef.s3.amazonaws.com/Swapit/images/contact.jpg');min-height: 500px;background-size: cover ;margin-top: auto; opacity: .9; padding-top:8%;" > <!-- padding and margin 40 -->
+            <h1 class="text-center " style="border-bottom: 1px dotted white;line-height: 0.5;color:rgb(255, 185, 0);font-weight:bold;width:80%;margin:auto;" >Contact Us</h1>
+<br><br>
+            <div class="block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="text-wrapper">
+                                    <div class="address-block">
+                                        <!-- <h3>ADDRESS</h3> -->
+                                        <ul class="simple-list contact">
+                                                <li><i class="icon icon-phone"></i> (+2)0100-0-SWAP-IT</li>
+                                                <li><img src="https://gazef.s3.amazonaws.com/Swapit/images/whatsapp-icon.png" class="whatsapp"> 01000792748</li>
+                                                <li><i class="icon icon-facebook-logo icon-circled"></i><a href="https://www.facebook.com/swapitclothing">swapitclothing</a></li>
+
+                                                <li><i class="icon icon-instagram icon-circled"></i><a href="https://www.instagram.com/swapitclothing">Swapitclothing</a> </li>
+                                            <li><i class="icon icon-close-envelope"></i>Email: <a href="mailto:info@swapitclothing.com">info@swapitclothing.com</a></li>
+
+                                            <!-- <li><i class="icon icon-location"></i><span>Alnarges 1 villa 3, 5th Satelment, new Cairo, Cairo, Egypt.</span></li> -->
+                                            
+                                       
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="text-wrapper">
+                                    <p id="contactFormSuccess">Your email was send successfully!</p>
+                                    <p id="contactFormError">Error, try to submit this form again.</p>
+                                    <form id="contactform" class="contact-form white" name="contactform" method="post">
+                                        
+                                        <!-- <label>E-mail<span class="required">*</span></label> -->
+                                        <input type="text" class="form-control input-lg" name="email" placeholder="Email">
+                                        <!-- <label>Name<span class="required">*</span></label> -->
+                                        <input type="text" class="form-control input-lg" name="address" placeholder="Address">
+                                        <!-- <label>Comment<span class="required">*</span></label> -->
+                                        <textarea class="form-control input-lg" name="message" placeholder="Message"></textarea>
+                                        <div>
+                                            <button class="btn btn-lg" id="submit">Send</button>
+                                        </div>
+                                        <div class="required-text">* Required Fields</div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 slogan-container">
+                                <p class="slogan">We'd love to help!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+
+
+
+            <!-- Page Content -->
+            <main class="page-main">
+                <!-- <div class="block">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li><a href="index.html"><i class="icon icon-home"></i></a></li>
+                            <li>/<span>Contact</span></li>
+                        </ul>
+                    </div>
+                </div> -->
+                
+                <div class="block fullwidth">
+                        <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSK_nLPUyr7NGihR1MkH5z1COHYFI9SKs"></script> -->
+
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIW0B_E3g-Yg533xy3yF0WHThi-mFvSNQ "></script>
+                        
+                        <script type="text/javascript">
+                            // When the window has finished loading create our google map below
+                            google.maps.event.addDomListener(window, 'load', init);
+    
+                            function init() {
+                                // Basic options for a simple Google Map
+                                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                                var mapOptions = {
+                                    zoom: 14,
+                                    scrollwheel: false,
+                                    center: new google.maps.LatLng(30.023271560668945, 31.46380043029785), // Seiko
+    
+                                    // How you would like to style the map. 
+                                    // This is where you would paste any style found on Snazzy Maps.
+                                    styles: [{
+                                        "featureType": "administrative",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#444444"
+                                        }]
+                                    }, {
+                                        "featureType": "landscape",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "color": "#f2f2f2"
+                                        }]
+                                    }, {
+                                        "featureType": "poi",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    }, {
+                                        "featureType": "road",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "saturation": -100
+                                        }, {
+                                            "lightness": 45
+                                        }]
+                                    }, {
+                                        "featureType": "road.highway",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "visibility": "simplified"
+                                        }]
+                                    }, {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "#ffffff"
+                                        }]
+                                    }, {
+                                        "featureType": "road.arterial",
+                                        "elementType": "labels.icon",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    }, {
+                                        "featureType": "transit",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    }, {
+                                        "featureType": "water",
+                                        "elementType": "all",
+                                        "stylers": [{
+                                            "color": "#dde6e8"
+                                        }, {
+                                            "visibility": "on"
+                                        }]
+                                    }]
+                                };
+    
+                                // Get the HTML DOM element that will contain your map 
+                                // We are using a div with id="map" seen below in the <body>
+                                var mapElement = document.getElementById('googleMap');
+    
+                                // Create the Google Map using our element and options defined above
+                                var map = new google.maps.Map(mapElement, mapOptions);
+                                var markers = [
+                                    ['SWAPIT',30.023271560668945, 31.46380043029785],
+                                    // ['Palace of Westminster, London', 51.499633, -0.124755]
+                                ];
+    
+                                for (i = 0; i < markers.length; i++) {
+                                    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                                    // bounds.extend(position);
+                                    marker = new google.maps.Marker({
+                                        position: position,
+                                        map: map,
+                                        title: markers[i][0]
+                                    });
+                                    // Info Window Content
+                                    var infoWindowContent = [
+                                        ['<div class="info_content">' +
+                                            '<h3>Swapit clothing</h3>' +
+                                            '<p>Alnarges 1 villa 3, 5th Satelment, new Cairo, Cairo, Egypt.</p>' +
+                                            '</div>'
+                                        ]
+                                        // ,
+                                        // ['<div class="info_content">' +
+                                        //     '<h3>Swapit Branch 2</h3>' +
+                                        //     '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+                                        //     '</div>'
+                                        // ]
+                                    ];
+    
+                                    var infoWindow = new google.maps.InfoWindow(),
+                                        marker, i;
+    
+                                    // Allow each marker to have an info window    
+                                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                                        return function () {
+                                            infoWindow.setContent(infoWindowContent[i][0]);
+                                            infoWindow.open(map, marker);
+                                        }
+                                    })(marker, i));
+    
+                                    // // Automatically center the map fitting all markers on the screen
+                                    // map.fitBounds(bounds);
+                                }
+                                // // Let's also add a marker while we're at it
+                                // var marker = new google.maps.Marker({
+                                //     position: new google.maps.LatLng(30.044281, 31.340002),
+                                //     map: map,
+                                //     title: 'Seiko'
+                                // });
+                            }
+                        </script>
+                        <!-- The element that will contain our Google Map. This is Pre-owned in both the Javascript and CSS above. -->
+                        <div id="googleMap" class="google-map"></div>
+                    </div>
+            </main>
+            <!-- /Page Content -->
+
+            {% include 'footer.html' %}
+
+        </div>
+        <!-- Page Content -->
+    </div>
+    <!-- ProductStack -->
+    <div class="productStack disable hide_on_scroll"> <a href="#" class="toggleStack"><i class="icon icon-cart"></i> (6) items</a>
+        <div class="productstack-content">
+            <div class="products-list-wrapper">
+                <ul class="products-list">
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-10.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a href="#" class="action edit" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-11.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-12.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-13.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-14.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-15.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-cart">
+                <button type="button" class="btn" title="Checkout"> <span>Checkout</span> </button>
+                <button type="button" class="btn" title="Go to Cart"> <span>Go to Cart</span> </button>
+            </div>
+            <div class="total-cart">
+                <div class="items-total">Items <span class="count">6</span></div>
+                <div class="subtotal">Subtotal <span class="price">2.150</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- /ProductStack -->
+
+    <!-- Modal Quick View -->
+    <div class="modal quick-view zoom" id="quickView">
+        <div class="modal-dialog">
+            <div class="modalLoader-wrapper">
+                <div class="modalLoader bg-striped"></div>
+            </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10006;</button>
+            </div>
+            <div class="modal-content">
+                <iframe></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Quick View -->
+
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+    <!-- jQuery form validation -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/form/jquery.form.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/form/jquery.validate.min.js"></script>
+    <script>
+        // Contact page form
+        $(function() {
+            $('#contactform').validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 3
+                    },
+                    message: {
+                        required: true,
+                        minlength: 15
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your name",
+                        minlength: "Your name must consist of at least 3 characters"
+                    },
+                    message: {
+                        required: "Please enter your message",
+                        minlength: "Your message must consist of at least 15 characters"
+                    },
+                    email: {
+                        required: "Please enter your email"
+                    }
+                },
+                submitHandler: function(form) {
+                    $(form).ajaxSubmit({
+                        type: "POST",
+                        data: $(form).serialize(),
+                        url: "contact.php",
+                        success: function() {
+                            $('#contactFormSuccess').fadeIn();
+                            $('#contactFormError').fadeOut();
+                            $('#contactform').trigger('reset');
+                        },
+                        error: function() {
+                            $('#contactFormSuccess').fadeOut();
+                            $('#contactFormError').fadeIn();
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150431712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150431712-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    </div>
+</body>
+
+</html>

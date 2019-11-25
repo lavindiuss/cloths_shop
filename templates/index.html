@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit - Home</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/myStyle.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Nunito:400,700" rel="stylesheet">
+
+    
+<style >
+    .box {
+    background-color: #ffffff;
+    padding: 50px 30px 45px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 black;
+    max-height: 235px!important;
+}
+
+    div.banner img{
+        height: 400px;
+    }
+
+    div.item>a{
+        background-size: cover !important;
+        height: 350px;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    /* .product-item-info,.product-item-inside{
+        height:500px
+    } */
+
+     /* .product-item-photo img{
+        max-height: 350px !important;
+        height: auto !important;
+        width: auto !important;
+     }
+
+    .product-item-info{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    } */
+
+    .slick-prev, .slick-next{
+        top:-12% !important;
+    }
+    @media only screen and (max-width: 900px) {
+
+    div.item>a {
+        background-size: 100% auto !important;
+    }
+    div.banner img {
+        height: auto !important;
+    }
+    }
+
+    .page-header.sticky .navbar {
+ 
+margin-top:30px !important;
+}
+
+/* .mainSlider .swiper-container .text2-4{
+    font-size: 5vw;
+}
+.mainSlider .swiper-container .text2-5 {
+    font-size: 4vw;
+} */
+
+</style>
+</head>
+
+<body class="boxed">
+    <!-- Loader -->
+    <div id="loader-wrapper" class="off">
+            <img src="https://gazef.s3.amazonaws.com/Swapit/loading.gif" style="margin-top: -250px;margin-left: 135px;"/>
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top">
+            <i class="icon icon-arrow-up"></i>
+        </a>
+        <!-- /Back To Top -->
+    </div>
+
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+            {% include 'header.html' %}
+
+            <!-- <br>
+            <br>
+
+            <br>
+            <br> -->
+            <!-- Page Content -->
+            <main class="page-main">
+                <div class="block fullwidth full-nopad bottom-space">
+                    <div class="container">
+                        <!-- Main Slider -->
+                        <div class="mainSlider" data-thumb="true" data-thumb-width="230" data-thumb-height="100">
+                            <div class="sliderLoader">Loading...</div>
+                            <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <!--<div class="swiper-slide" data-thumb="https://gazef.s3.amazonaws.com/Swapit/images/slider/slide-01-thumb.png" data-href="http://google.com"-->
+                                        <!--data-target="_blank">-->
+                                        <!--&lt;!&ndash; _blank or _self ( _self is default )&ndash;&gt;-->
+                                        <!--<div class="wrapper">-->
+                                            <!--<figure>-->
+                                                <!--<img src="https://gazef.s3.amazonaws.com/Swapit/images/slider/slide-1.jpg" alt="">-->
+                                            <!--</figure>-->
+                                            <!--<div class="text2-1 animate" data-animate="flipInY" data-delay="0"> SWAPIT </div>-->
+                                            <!--<div class="text2-2 animate" data-animate="bounceIn" data-delay="500"> Season sale </div>-->
+                                            <!--<div class="text2-3 animate" data-animate="bounceIn" data-delay="1000"> popular brands </div>-->
+                                            <!--<div class="text2-4 animate" data-animate="rubberBand" data-delay="1500"> 70% </div>-->
+                                            <!--<div class="text2-5 animate" data-animate="hinge" data-delay="2000"> OFF </div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="swiper-slide" data-thumb="https://gazef.s3.amazonaws.com/Swapit/images/slider/slide-02-thumb.png">-->
+                                        <!--<div class="wrapper">-->
+                                            <!--<figure>-->
+                                                <!--<img src="https://gazef.s3.amazonaws.com/Swapit/images/slider/slide-3.jpg" alt="">-->
+                                            <!--</figure>-->
+                                            <!--<div class="caption animate" data-animate="fadeIn">-->
+                                                <!--<div class="text1 animate" data-animate="flipInY" data-delay="0"> SWAPIT </div>-->
+                                                <!--<div class="text2 animate" data-animate="bounceInLeft" data-delay="500">-->
+                                                    <!--<strong>New</strong> collection </div>-->
+                                                <!--<div class="text3 animate" data-animate="bounceInLeft" data-delay="1500"> WOMEN'S-->
+                                                    <!--<strong>FASHION</strong>-->
+                                                <!--</div>-->
+                                                <!--<div class="animate" data-animate="fadeIn" data-delay="2000">-->
+                                                    <!--&lt;!&ndash; coolbutton &ndash;&gt;-->
+                                                    <!--<a href="#" class="cool-btn" style="-webkit-clip-path: url(#coolButton); clip-path: url(#coolButton);">-->
+                                                        <!--<span>MORE</span>-->
+                                                    <!--</a>-->
+                                                    <!--<svg class="clip-svg">-->
+                                                        <!--<defs>-->
+                                                            <!--<clipPath id="coolButton" clipPathUnits="objectBoundingBox">-->
+                                                                <!--<polygon points="0 .18, .99 .15, .91 .85, .07 .8" />-->
+                                                            <!--</clipPath>-->
+                                                        <!--</defs>-->
+                                                    <!--</svg>-->
+                                                    <!--&lt;!&ndash; // coolbutton &ndash;&gt;-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="swiper-slide" data-thumb="https://gazef.s3.amazonaws.com/Swapit/images/slider/slide-03-thumb.png">-->
+                                        <!--<div class="wrapper">-->
+                                            <!--<figure>-->
+                                                <!--<img src="https://gazef.s3.amazonaws.com/Swapit/images/slider/slide-2.jpg" alt="">-->
+                                            <!--</figure>-->
+                                            <!--<div class="text3-1 animate" data-animate="bounceInDown" data-delay="0"> Street </div>-->
+                                            <!--<div class="text3-2 animate" data-animate="bounceInDown" data-delay="500"> Fashion </div>-->
+                                            <!--<div class="text3-3 animate" data-animate="bounceInDown" data-delay="1000"> And </div>-->
+                                            <!--<div class="text3-4 animate" data-animate="bounceIn" data-delay="1500"> Urban </div>-->
+                                            <!--<div class="text3-5 animate" data-animate="bounceIn" data-delay="2000"> Subcultures </div>-->
+                                            <!--<a href="#" class="text3-6 animate" data-animate="rubberBand" data-delay="2500"> SHOP NOW </a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    {% for banner in banners %}
+                                    <div class="swiper-slide" data-thumb="{{ banner.image.url }}">
+                                        <div class="wrapper">
+                                            <figure>
+                                                <img src="{{ banner.image.url }}" alt="">
+                                            </figure>
+                                            <div class="text4-1 animate" data-animate="bounceInLeft" data-delay="0">
+                                                <p {% if banner.title_color %}style="color: {{banner.title_color}} !important;font-size:{{banner.font_size}} !important;"{% endif %}>{{ banner.title }}</p>
+                                            </div>
+                                            <!--<div class="text4-2 animate" data-animate="bounceInDown" data-delay="500">very soon</div>-->
+                                            <div class="text4-3 animate" data-animate="bounceInUp" data-delay="1000">
+                                                <p {% if banner.subtitle_color %}style="color: {{banner.subtitle_color}} !important;"{% endif %}>{{ banner.subtitle }}</p>
+                                            </div>
+                                            <a href="{{ banner.button_url }}" class="text4-4 animate" data-animate="bounceInLeft" data-delay="1500" {% if banner.button_color %} style="background-color:{{banner.button_color}} !important" {% endif %}>
+                                                <p {% if banner.button_text_color %}style="color: {{banner.button_text_color}} !important;font-size:{{banner.button_font_size}} !important;"{% endif %}>{{ banner.button_text }}</p>
+                                            </a>
+                                            <!-- <div class="text2-4 animate" data-animate="rubberBand" data-delay="1500" style="font-size: 6vw;"> 30% </div>
+											<div class="text2-5 animate" data-animate="hinge" data-delay="2000" style="font-size: 5vw;"> OFF </div> -->
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <!-- pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- pagination thumbs -->
+                                <div class="swiper-pagination-thumbs">
+                                    <div class="thumbs-wrapper">
+                                        <div class="thumbs"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Main Slider -->
+                    </div>
+                </div>
+                <div class="block" style="display:none;">
+                    <div class="container">
+                        <!-- Wellcome text -->
+                        <div class="text-center bottom-space">
+                            <h1 class="size-lg no-padding">WELCOME TO
+                                <span class="logo-font custom-color">SWAPIT</span> STORE</h1>
+                            <div class="line-divider"></div>
+                            <!-- <p class="custom-color-alt">Lorem ipsum dolor sit amet, ex eam mundi populo accusamus, aliquam quaestio petentium te cum.
+                                <br> Vim ei oblique tacimates, usu cu iudico graeco. Graeci eripuit inimicus vel eu, eu mel unum laoreet splendide, cu integre apeirian has.
+                            </p> -->
+                        </div>
+                        <!-- /Wellcome text -->
+                    </div>
+                </div>
+                <div class="block">
+                <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                        <!-- Deal Carousel -->
+                        <div class="title">
+                            <h2 class="custom-color">Deal of the day</h2>
+                            <div class="toggle-arrow"></div>
+                            <div class="carousel-arrows"></div>
+                        </div>
+                        <div class="collapsed-content">
+                            <div class="deal-carousel-custom products-grid product-variant-5">
+                                {% for product in deal_products %}
+                                <!-- Product Item -->
+                                <div class="product-item large">
+                                    <div class="product-item-inside">
+                                        <div class="product-item-info">
+                                            <!-- Product Photo -->
+                                            <div class="product-item-photo">
+                                                {% if product.sale_valid %}
+                                                <!-- Product Label -->
+                                                <div class="product-item-label label-sale {{ product.category.css_name }}-bg">
+                                                    <span>-{{ product.discount_percentage }}%</span>
+                                                </div>
+                                                <!-- /Product Label -->
+                                                {% endif %}
+
+                                                <!-- Product Label -->
+                                                <div class="product-item-label label-new {{ product.category.css_name }}-bg">
+                                                    <span>{{ product.status }}</span>
+                                                </div>
+                                                <!-- /Product Label -->
+
+                                                <!-- product main photo -->
+                                                <div class="product-item-gallery-main">
+                                                    <!-- product inside carousel -->
+                                                    <div class="carousel-inside slide" data-ride="carousel">
+                                                        <div class="carousel-inner" role="listbox">
+                                                            {% for image in product.image_set.all %} {% if forloop.counter == 1 %}
+                                                            <div class="item active">
+                                                                <a href="/product/?id={{product.id}}" style="background:url('{{ image.image.url }}')">
+                                                                    <!-- <img class="product-image-photo" src="{{ image.image.url }}" alt=""> -->
+                                                                </a>
+                                                            </div>
+                                                            {% else %}
+                                                            <div class="item">
+                                                                <a href="/product/?id={{product.id}}" style="background:url('{{ image.image.url }}')">
+                                                                    <!-- <img class="product-image-photo" src="{{ image.image.url }}" alt=""> -->
+                                                                </a>
+                                                            </div>
+                                                            {% endif %} {% endfor %}
+                                                        </div>
+                                                        {% if product.image_set.count > 1 %}
+                                                        <a class="carousel-control next"></a>
+                                                        <a class="carousel-control prev"></a>
+                                                        {% endif %}
+                                                    </div>
+                                                    <!-- /product inside carousel -->
+                                                </div>
+                                                <!-- /product main photo  -->
+                                                <div class="countdown-box hidden-xs">
+													<div class="countdown-wrapper">
+														<div class="countdown-title">special price expires in</div>
+														<div class="countdown" data-promodate={{ product.discount_expiry.date|date:"SHORT_DATE_FORMAT" }}></div>
+													</div>
+												</div>
+                                                <!-- Product Actions -->
+                                                <a href="/wishlist_add/?id={{ product.id }}" title="Add to Wishlist" class="wishlist active">
+                                                    <i class="icon icon-heart {{ product.category.css_name }}"></i>
+                                                    <span>Add to Wishlist</span>
+                                                </a>
+                                                <div class="product-item-actions">
+                                                    <div class="share-button toBottom">
+                                                        <span class="toggle"></span>
+                                                        <ul class="social-list">
+                                                            <li>
+                                                                <a href="https://www.facebook.com/swapitclothing/" target="_blank" onclick="window.open('https://www.facebook.com/swapitclothing/', 'Facebook', 'width=600,height=600');" class="icon icon-facebook-logo facebook"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/swapit_clothing/" target="_blank" class="icon icon-instagram instagram"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.youtube.com/channel/UCey50YDYTRLhTKb1bnQmPsA" class="video-link icon icon-film"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- /Product Actions -->
+                                            </div>
+                                            <!-- /Product Photo -->
+                                            <!-- Product Details -->
+                                            <div class="product-item-details">
+                                                <div class="product-item-name">
+                                                    <a title="Cover up tunic" href="/product/?id={{ product.id }}" class="product-item-link">{{ product.title }}</a>
+                                                </div>
+                                                <div class="product-item-description">{{ product.description }}</div>
+                                                <div class="price-box">
+                                                    <span class="price-container">
+                                                        <span class="price-wrapper">
+                                                            {% if product.sale_valid %}
+                                                            <span class="old-price">EGP {{ product.discounted_price }}</span>
+                                                            {% endif %}
+                                                            <span class="special-price {{ product.category.css_name }}">EGP {{ product.price }}</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+
+                                                <a href="/add_to_cart/?id={{ product.id }}&redirect={{ request.path }}#product{{ product.id }}">
+                                                    <button class="btn {{ product.category.css_name }}-bg" data-product="789123">
+                                                        <i class="icon icon-cart"></i>
+                                                        <span>Add to Cart</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <!-- /Product Details -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Product Item -->
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <!-- /Deal Carousel -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Deal Carousel -->
+                    <div class="title">
+                        <h2 class="custom-color">Featured Products</h2>
+                        <div class="toggle-arrow"></div>
+                        <div class="carousel-arrows"></div>
+                    </div>
+                    <div class="collapsed-content">
+                        <div class="deal-carousel-custom products-grid product-variant-5">
+                            {% for product in featured_products %}
+                            <!-- Product Item -->
+                            <div class="product-item large">
+                                <div class="product-item-inside">
+                                    <div class="product-item-info">
+                                        <!-- Product Photo -->
+                                        <div class="product-item-photo">
+                                            {% if product.sale_valid %}
+                                            <!-- Product Label -->
+                                            <div class="product-item-label label-sale {{ product.category.css_name }}-bg">
+                                                <span>-{{ product.discount_percentage }}%</span>
+                                            </div>
+                                            <!-- /Product Label -->
+                                            {% endif %}
+
+                                            <!-- Product Label -->
+                                            <div class="product-item-label label-new {{ product.category.css_name }}-bg">
+                                                <span>{{ product.status }}</span>
+                                            </div>
+                                            <!-- /Product Label -->
+
+                                            <!-- product main photo -->
+                                            <div class="product-item-gallery-main">
+                                                <!-- product inside carousel -->
+                                                <div class="carousel-inside slide" data-ride="carousel">
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="item active">
+                                                            <a href="/product/?id={{product.id}}" style="background:url('{{ product.low_res_image }}')">
+                                                                <!-- <img class="product-image-photo" src="{{ image.image.url }}" alt=""> -->
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    {% if product.image_set.count > 1 %}
+                                                    <a class="carousel-control next"></a>
+                                                    <a class="carousel-control prev"></a>
+                                                    {% endif %}
+                                                </div>
+                                                <!-- /product inside carousel -->
+                                            </div>
+                                            <!-- /product main photo  -->
+
+                                            <!-- Product Actions -->
+                                            <a href="/wishlist_add/?id={{ product.id }}" title="Add to Wishlist" class="wishlist active">
+                                                <i class="icon icon-heart {{ product.category.css_name }}"></i>
+                                                <span>Add to Wishlist</span>
+                                            </a>
+                                            <div class="product-item-actions">
+                                                <div class="share-button toBottom">
+                                                    <span class="toggle"></span>
+                                                    <ul class="social-list">
+                                                        <li>
+                                                            <a href="https://www.facebook.com/sharer.php?u=http://swapitclothing.com/product/?id={{ product.id }}" target="_blank" onclick="window.open('https://www.facebook.com/sharer.php?u=http://swapitclothing.com/product/?id={{ product.id }}', 'Facebook', 'width=600,height=600');" class="icon icon-facebook-logo facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.instagram.com/swapitclothing" target="_blank" class="icon icon-instagram instagram"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.youtube.com/watch?v=w4vxqsTNH7Y" class="video-link icon icon-film"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- /Product Actions -->
+                                        </div>
+                                        <!-- /Product Photo -->
+                                        <!-- Product Details -->
+                                        <div class="product-item-details">
+                                            <div class="product-item-name">
+                                                <a title="Cover up tunic" href="/product/?id={{ product.id }}" class="product-item-link">{{ product.title }}</a>
+                                            </div>
+                                            <div class="product-item-description">{{ product.description }}</div>
+                                            <div class="price-box">
+                                                <span class="price-container">
+                                                    <span class="price-wrapper">
+                                                        {% if product.sale_valid %}
+                                                        <span class="old-price">EGP {{ product.discounted_price }}</span>
+                                                        {% endif %}
+                                                        <span class="special-price {{ product.category.css_name }}">EGP {{ product.price }}</span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                            <a href="/add_to_cart/?id={{ product.id }}&redirect={{ request.path }}#product{{ product.id }}">
+                                                <button class="btn {{ product.category.css_name }}-bg" data-product="789123">
+                                                    <i class="icon icon-cart"></i>
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <!-- /Product Details -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Product Item -->
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- /Deal Carousel -->
+            </div>
+                </div>
+                </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+                        <div class="title">
+                            <h2>All Products</h2>
+                        </div>
+                        <!-- <ul class="filters filters-product style2">
+                            <li>
+                                <a href="#" class="filter-label">All
+                                    <span class="count"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter-label" data-filter=".new">New
+                                    <span class="count"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="filter-label" data-filter=".Pre-owned">Pre-owned
+                                    <span class="count"></span>
+                                </a>
+                            </li>
+                        </ul> -->
+                        <div class="products-grid-wrapper isotope-wrapper">
+                            <div class="products-grid isotope four-in-row product-variant-5">
+                                {% for product in products %}
+                                <!-- Product Item -->
+                                <a name="product{{ product.id }}"></a>
+                                <div class="product-item large colorvariants {{ product.status|lower }}">
+                                    <div class="product-item-inside">
+                                        <div class="product-item-info">
+                                            <!-- Product Photo -->
+                                            <div class="product-item-photo">
+                                                {% if product.sale_valid %}
+                                                <!-- Product Label -->
+                                                <div class="product-item-label label-sale {{ product.category.css_name }}-bg">
+                                                    <span>-{{ product.discount_percentage }}%</span>
+                                                </div>
+                                                <!-- /Product Label -->
+                                                {% endif %}
+
+                                                <!-- Product Label -->
+                                                <div class="product-item-label label-new {{ product.category.css_name }}-bg">
+                                                    <span>{{ product.status }}</span>
+                                                </div>
+                                                <!-- /Product Label -->
+
+                                                <!-- product main photo -->
+                                                <div class="product-item-gallery-main">
+                                                    <!-- product inside carousel -->
+                                                    <div class="carousel-inside slide" data-ride="carousel">
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="item active">
+                                                                <a href="/product/?id={{product.id}}" style="background:url('{{ product.low_res_image }}')">
+                                                                    <!-- <img class="product-image-photo" src="{{ image.image.url }}" alt=""> -->
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        {% if product.image_set.count > 1 %}
+                                                        <a class="carousel-control next"></a>
+                                                        <a class="carousel-control prev"></a>
+                                                        {% endif %}
+                                                    </div>
+                                                    <!-- /product inside carousel -->
+                                                </div>
+                                                <!-- /product main photo  -->
+
+                                                {% if product.sale_valid %}
+                                                <div class="countdown-box hidden-xs">
+                                                    <div class="countdown-wrapper">
+                                                        <div class="countdown-title {{ product.category.css_name }}">special price expires in</div>
+                                                        <div class="countdown {{ product.category.css_name }}" data-promodate={{ product.discount_expiry.date|date:"SHORT_DATE_FORMAT" }}></div>
+                                                    </div>
+                                                </div>
+                                                {% endif %}
+
+                                                <!-- Product Actions -->
+                                                <a href="/wishlist_add/?id={{ product.id }}" title="Add to Wishlist" class="wishlist active">
+                                                    <i class="icon icon-heart {{ product.category.css_name }}"></i>
+                                                    <span>Add to Wishlist</span>
+                                                </a>
+                                                <div class="product-item-actions">
+                                                    <div class="share-button toBottom">
+                                                        <span class="toggle"></span>
+                                                        <ul class="social-list">
+                                                            <li>
+                                                                <a href="https://www.facebook.com/sharer.php?u=http://swapitclothing.com/product/?id={{ product.id }}" target="_blank" onclick="window.open('https://www.facebook.com/sharer.php?u=http://swapitclothing.com/product/?id={{ product.id }}', 'Facebook', 'width=600,height=600');" class="icon icon-facebook-logo facebook"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.instagram.com/swapitclothing" target="_blank" class="icon icon-instagram instagram"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.youtube.com/watch?v=w4vxqsTNH7Y" class="video-link icon icon-film"></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- /Product Actions -->
+                                            </div>
+                                            <!-- /Product Photo -->
+                                            <!-- Product Details -->
+                                            <div class="product-item-details">
+                                                <div class="product-item-name">
+                                                    <a title="{{ product.name }}" href="/product/?id={{product.id}}" class="product-item-link {{ product.category.css_name }}">{{ product.name }}</a>
+                                                </div>
+                                                <div class="product-item-description">{{ product.description }}</div>
+                                                {% if product.sale_valid %}
+                                                <div class="price-box">
+                                                    <span class="price-container">
+                                                        <span class="price-wrapper">
+                                                            <span class="old-price">EGP {{ product.price }}</span>
+                                                            <span class="special-price {{ product.category.css_name }}">EGP {{ product.discounted_price }}</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                {% else %}
+                                                <div class="price-box">
+                                                    <span class="price-container">
+                                                        <span class="price-wrapper">
+                                                            <span class="price {{ product.category.css_name }}">EGP {{ product.price }}</span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                {% endif %}
+                                                <a href="/add_to_cart/?id={{ product.id }}&redirect={{ request.path }}#product{{ product.id }}">
+                                                    <button class="btn {{ product.category.css_name }}-bg" data-product="789123">
+                                                        <i class="icon icon-cart"></i>
+                                                        <span>Add to Cart</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <!-- /Product Details -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Product Item -->
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                <div class="text-center">
+                  <ul class="pagination">
+                    {% if products.has_previous %}
+                    <li><a href="?page={{ products.previous_page_number }}&{{ params.urlencode }}">{{ products.previous_page_number }}</a></li>
+                    {% endif %}
+                    <li class="active"><a>{{ products.number }}</a></li>
+                    {% if products.has_next %}
+                    <li><a href="?page={{ products.next_page_number }}&{{ params.urlencode }}">{{ products.next_page_number }}</a></li>
+                    {% endif %}
+                  </ul>
+                </div>
+            </main>
+                </div>
+                <div class="block banners-with-pad" style="display:none;">
+                    <div class="block">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="box style2 bgcolor1 text-center" style="background-color: #c40030; ;">
+                                        <div class="box-icon">
+                                            <i class="icon icon-truck"></i>
+                                        </div>
+                                        <h3 class="box-title">FREE SHIPPING</h3>
+                                        <div class="box-text">Get your Free shipping on all orders over 1200 LE</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="box style2 bgcolor2 text-center" style="background-color:rgb(255, 185, 0) ;">
+                                        <div class="box-icon">
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                        <h3 class="box-title">INSURED HIGH QUALITY</h3>
+                                        <div class="box-text">100% original clothing with great conditon</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="box style2 bgcolor3 text-center" style="background-color:#09c100;">
+                                        <div class="box-icon">
+                                            <i class="icon icon-help"></i>
+                                        </div>
+                                        <h3 class="box-title">CONNECT FASTER</h3>
+                                        <div class="box-text"> Text us through whatsapp for more info</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6   ">
+                                <!-- <a href="{{ announcements.0.url }}" class="banner-wrap">
+                                    <div class="banner style-17 autosize-text image-hover-scale" data-fontratio="4.6">
+                                        <img src="{{ announcements.0.image.url }}" alt="Banner">
+                                        <div class="banner-caption vertb horl">
+                                            <div class="vert-wrapper">
+                                                <div class="vert">
+                                                    <div class="text-1">{{ announcements.0.title }}</div>
+                                                    <div class="text-2 text-hoverslide" data-hcolor="#ffffff">
+                                                        <span>
+                                                            <span class="text">{{ announcements.0.sub_title }}</span>
+                                                            <span class="hoverbg"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="text-3">{{ announcements.0.text }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a> -->
+                                <a href="{{ announcements.2.url }}" class="banner-wrap">
+                                    <div class="banner style-18 autosize-text" data-fontratio="4.6">
+                                        <!-- <img src="{{ announcements.2.image.url }}" alt="Banner"> -->
+                                        <div class="banner-caption vertl horl">
+                                            <div class="vert-wrapper">
+                                                <div class="vert">
+                                                    <div class="text-1">{{ announcements.2.title }}</div>
+                                                    <div class="text-2">{{ announcements.2.sub_title }}</div>
+                                                    <div class="banner-btn text-hoverslide" data-hcolor="#fff">
+                                                        <span>
+                                                            <span class="text">{{ announcements.2.button_text }}</span>
+                                                            <span class="hoverbg"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <a href="{{ announcements.1.url }}" class="banner-wrap">
+                                    <div class="banner style-19 autosize-text image-hover-scale" data-fontratio="4.6">
+                                        <img src="{{ announcements.1.image.url }}" alt="Banner">
+                                        <div class="banner-caption vertb horl">
+                                            <div class="vert-wrapper">
+                                                <div class="vert">
+                                                    <div class="text-1">{{ announcements.1.title }}</div>
+                                                    <div class="text-2">{{ announcements.1.sub_title }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a> -->
+                                <a href="{{ announcements.3.url }}" class="banner-wrap">
+                                    <div class="banner style-20 autosize-text" data-fontratio="4.6">
+                                        <!-- <img src="{{ announcements.3.image.url }}" alt="Banner"> -->
+                                        <div class="banner-caption vertb horr">
+                                            <div class="vert-wrapper">
+                                                <div class="vert">
+                                                    <div class="text-1">{{ announcements.3.title }}
+                                                        <span class="text-corner"></span>
+                                                    </div>
+                                                    <div class="text-2">{{ announcements.3.sub_title }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block bottom-space" style="display:none;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Blog Carousel -->
+                                <div class="title">
+                                    <h2>From Blog</h2>
+                                    <div class="carousel-arrows"></div>
+                                </div>
+                                {% for article in blog %}
+                                <!-- Blog Carousel Item -->
+                                <div class="blog-carousel">
+                                    <div class="blog-item">
+                                        <a href="/article/?id={{ article.id }}" class="blog-item-photo">
+                                            <img class="product-image-photo" src="{{ article.image.url }}" alt="From Blog">
+                                        </a>
+                                        <div class="blog-item-info">
+                                            <a href="blog.html" class="blog-item-title">{{ article.title }}</a>
+                                            <div class="blog-item-teaser">{{ article.section_set.first.text|truncatewords:30 }}</div>
+                                            <div class="blog-item-links">
+                                                <span class="pull-left">
+                                                    <span>
+                                                        <a href="/article/?id={{ article.id }}" class="readmore">Read more</a>
+                                                    </span>
+                                                </span>
+                                                <span class="pull-right">
+                                                    <span>Post by
+                                                        <a href="#">Admin</a>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Blog Carousel Item -->
+                                    {% endfor %}
+                                </div>
+                                <!-- /Blog Carousel -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="collapsed-mobile">
+                                    <div class="title">
+                                        <h2>Contact</h2>
+                                        <div class="toggle-arrow"></div>
+                                    </div>
+                                    <div class="collapsed-content">
+                                        <ul class="contact-list">
+                                            <li>
+                                                <h3><i class="icon icon-location-pin"></i>ADDRESS</h3>
+                                                <div>Alnarges 1 villa 3, 5th Satelment, new Cairo, Cairo, Egypt.</div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-close-envelope"></i>Email</h3>
+                                                <div><a href="mailto:info@swapitclothing.com">info@swapitclothing.com</a></div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-phone"></i>PHONE</h3>
+                                                <div><a href="call:+201000792748">01000swapit (792748) </a>   
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-facebook-logo"></i>FACEBOOK</h3>
+                                                <div><a href="https://www.facebook.com/swapitclothing">https://www.facebook.com/swapitclothing</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-instagram"></i>INSTAGRAM</h3>
+                                                <div><a href="https://www.instagram.com/swapitclothing">https://www.instagram.com/swapitclothing</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="block fullwidth full-nopad">
+                    <div class="container">
+                        <div id="instafeed" class="instagramm-feed-full"></div>
+                        <div class="instagramm-title">Instagram Feed</div>
+                    </div>
+                </div> -->
+            </main>
+            <!-- /Page Content -->
+
+
+            {% include 'footer.html' %}
+
+        </div>
+        <!-- Page Content -->
+    </div>
+    <!-- ProductStack -->
+    <div class="productStack disable hide_on_scroll">
+        <a href="#" class="toggleStack">
+            <i class="icon icon-cart"></i> (6) items</a>
+        <div class="productstack-content">
+            <div class="products-list-wrapper">
+                <ul class="products-list">
+                    <li>
+                        <a href="product.html" title="Product Name Long Name">
+                            <img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-10.jpg"
+                                alt="">
+                        </a>
+                        <span class="item-qty">3</span>
+                        <div class="actions">
+                            <a href="#" class="action edit" title="Edit item">
+                                <i class="icon icon-pencil"></i>
+                            </a>
+                            <a class="action delete" href="#" title="Delete item">
+                                <i class="icon icon-trash-alt"></i>
+                            </a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name">
+                            <img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-11.jpg"
+                                alt="">
+                        </a>
+                        <span class="item-qty">3</span>
+                        <div class="actions">
+                            <a class="action edit" href="#" title="Edit item">
+                                <i class="icon icon-pencil"></i>
+                            </a>
+                            <a class="action delete" href="#" title="Delete item">
+                                <i class="icon icon-trash-alt"></i>
+                            </a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name">
+                            <img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-12.jpg"
+                                alt="">
+                        </a>
+                        <span class="item-qty">3</span>
+                        <div class="actions">
+                            <a class="action edit" href="#" title="Edit item">
+                                <i class="icon icon-pencil"></i>
+                            </a>
+                            <a class="action delete" href="#" title="Delete item">
+                                <i class="icon icon-trash-alt"></i>
+                            </a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name">
+                            <img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-13.jpg"
+                                alt="">
+                        </a>
+                        <span class="item-qty">3</span>
+                        <div class="actions">
+                            <a class="action edit" href="#" title="Edit item">
+                                <i class="icon icon-pencil"></i>
+                            </a>
+                            <a class="action delete" href="#" title="Delete item">
+                                <i class="icon icon-trash-alt"></i>
+                            </a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name">
+                            <img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-14.jpg"
+                                alt="">
+                        </a>
+                        <span class="item-qty">3</span>
+                        <div class="actions">
+                            <a class="action edit" href="#" title="Edit item">
+                                <i class="icon icon-pencil"></i>
+                            </a>
+                            <a class="action delete" href="#" title="Delete item">
+                                <i class="icon icon-trash-alt"></i>
+                            </a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name">
+                            <img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-15.jpg"
+                                alt="">
+                        </a>
+                        <span class="item-qty">3</span>
+                        <div class="actions">
+                            <a class="action edit" href="#" title="Edit item">
+                                <i class="icon icon-pencil"></i>
+                            </a>
+                            <a class="action delete" href="#" title="Delete item">
+                                <i class="icon icon-trash-alt"></i>
+                            </a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-cart">
+                <button type="button" class="btn" title="Checkout">
+                    <span>Checkout</span>
+                </button>
+                <button type="button" class="btn" title="Go to Cart">
+                    <span>Go to Cart</span>
+                </button>
+            </div>
+            <div class="total-cart">
+                <div class="items-total">Items
+                    <span class="count">6</span>
+                </div>
+                <div class="subtotal">Subtotal
+                    <span class="price">2.150</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /ProductStack -->
+
+    <!-- Modal Quick View -->
+    <div class="modal quick-view zoom" id="quickView">
+        <div class="modal-dialog">
+            <div class="modalLoader-wrapper">
+                <div class="modalLoader bg-striped"></div>
+            </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10006;</button>
+            </div>
+            <div class="modal-content">
+                <iframe></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Quick View -->
+
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+    <script>
+        $('.deal-carousel-custom').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2
+        });
+		
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150431712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150431712-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+<!-- Header -->
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/myStyle.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,700" rel="stylesheet">
+
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=663248937478868&autoLogAppEvents=1"></script>
+</head>
+<style>
+    .navbar .nav>li>a,
+    .navbar .nav>li>a:focus {
+        font-size: 18px !important;
+    }
+    
+    .mega-dropdown .sub-menu {
+        top: 118px !important;
+    }
+    
+    .fbdiv {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .menu-label {
+        top: 10px !important;
+        /* background-color: black !important; */
+        font-size: small;
+    }
+</style>
+<header class="page-header variant-1 fullboxed sticky smart">
+    <div class="navbar" style="background-color: #fff;">
+        <div class="container">
+            <!-- Menu Toggle -->
+            <div class="menu-toggle"><a href="#" class="mobilemenu-toggle"><i class="icon icon-menu"></i></a></div>
+            <!-- /Menu Toggle -->
+            <!-- Header Cart -->
+            <div class="header-link dropdown-link header-cart variant-1" style="margin-bottom: 5px">
+                <a href="/cart/"> <i class="icon icon-cart"></i> <span class="badge">{{ cart.count }}</span> </a>
+                <!-- minicart wrapper -->
+                <div class="dropdown-container right">
+                    <!-- minicart content -->
+                    <div class="block block-minicart">
+                        <div class="minicart-content-wrapper">
+                            <div class="block-title">
+                                <span>Recently added item(s)</span>
+                            </div>
+                            <a class="btn-minicart-close" title="Close">&#10060;</a>
+                            <div class="block-content">
+                                <div class="minicart-items-wrapper overflowed">
+                                    <ol class="minicart-items">
+                                        {% for item in cart %}
+                                        <li class="item product product-item">
+                                            <div class="product">
+                                                <a class="product-item-photo" href="/product/?id={{ item.product.id }}" title="{{ item.product.name }}">
+                                                    <span class="product-image-container">
+                                                        <span class="product-image-wrapper">
+                                                            <img class="product-image-photo"
+                                                                src="{{ item.product.image_set.first.image.url }}"
+                                                                alt="Long sleeve overall">
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                                <div class="product-item-details">
+                                                    <div class="product-item-name">
+                                                        <a href="/product/?id={{ item.product.id }}">{{ item.product.name }}</a>
+                                                    </div>
+                                                    <div class="product-item-qty">
+                                                        <label class="label">Qty</label>
+                                                        <input class="item-qty cart-item-qty" maxlength="12" value="{{ item.quantity }}">
+                                                        <button class="update-cart-item" style="display: none" title="Update">
+                                                            <span>Update</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="product-item-pricing">
+                                                        <div class="price-container">
+                                                            <span class="price-wrapper">
+                                                                <span class="price-excluding-tax">
+                                                                    <span class="minicart-price">
+                                                                        <span class="price">EGP
+                                                                            {{ item.unit_price }}</span> </span>
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="product actions">
+                                                            <div class="secondary">
+                                                                <a href="/remove_from_cart/?id={{ item.product.id }}&redirect={{ request.get_full_path }}" class="action delete" title="Remove item">
+                                                                    <span>Delete</span>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="primary">
+                                                                <a class="action edit" href="#" title="Edit item">
+                                                                    <span>Edit</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        {% endfor %}
+                                    </ol>
+                                </div>
+                                <div class="subtotal">
+                                    <span class="label">
+                                        <span>Subtotal</span>
+                                    </span>
+                                    <div class="amount price-container">
+                                        <span class="price-wrapper"><span class="price">EGP
+                                                {{ cart.summary }}</span></span>
+                                    </div>
+                                </div>
+                                <div class="actions">
+                                    <div class="secondary">
+                                        <a href="/cart/" class="btn btn-alt">
+                                            <i class="icon icon-cart"></i><span>View and edit cart</span>
+                                        </a>
+                                    </div>
+                                    <div class="primary">
+                                        <a class="btn" href="/checkout/">
+                                            <i class="icon icon-external-link"></i><span>Go to Checkout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /minicart content -->
+                </div>
+                <!-- /minicart wrapper -->
+            </div>
+            <!-- /Header Cart -->
+            <!-- Header Links -->
+            <div class="header-links">
+                <!-- Header Language -->
+                <!--<div class="header-link header-select dropdown-link header-language">
+                    <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/flags/eng.png" alt /></a>
+                    <ul class="dropdown-container">
+                        <li class="active">
+                            <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/flags/eng.png" alt />English</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/flags/fr.png" alt />French</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/flags/den.png" alt />German</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- /Header Language -->
+                <!-- Header Currency -->
+                <!--  <div class="header-link header-select dropdown-link header-currency">
+                    <a href="#">USD</a>
+                    <ul class="dropdown-container">
+                        <li><a href="#"><span class="symbol">€</span>EUR</a></li>
+                        <li class="active"><a href="#"><span class="symbol">$</span>USD</a></li>
+                        <li><a href="#"><span class="symbol">£</span>GBP</a></li>
+                    </ul>
+                </div> -->
+                <!-- /Header Currency -->
+                <!-- Header Wishlist -->
+                <div class="header-link">
+                    <a href="#" onclick="$('.exp-icon-search').click()"><i class="icon icon-magnify"></i></a>
+                </div>
+                {% if request.user.is_authenticated %}
+                <div class="header-link">
+                    <a href="/wishlist_get/"><i class="icon icon-heart"></i><span>Wishlist</span></a>
+                </div>
+                {% endif %}
+                <!--/Header Wishlist -->
+                <!-- Header Account -->
+                {% if request.user.is_authenticated %}
+                <div class="header-link dropdown-link header-account">
+                    <a href="/account_details/"><span>{{ request.user.first_name }}</span></a>
+                    <span><br>
+                        <!-- not {{ request.user.first_name }}?  -->
+                        <!-- <a href="/logout/">Logout</a> -->
+                    </span>
+                </div>
+                {% else %}
+                <div class="header-link dropdown-link header-account">
+                    <a href="#">
+                        <!-- <i class="icon icon-user"></i> --><span> Login </span></a>
+                    <div class="dropdown-container right">
+                        <div class="title">Registered Customers</div>
+                        <div class="top-text">If you have an account with us, please log in.</div>
+                        <!-- form -->
+                        <form action="/login/" method="post">
+                            {% csrf_token %}
+                            <input type="text" class="form-control" placeholder="UserName*" id="username" name="username">
+                            <input type="password" class="form-control" placeholder="Password*" id="password" name="password">
+                            <button type="submit" class="btn">Sign in</button>
+
+                        </form>
+                        <div class="fbdiv">
+                            <div class="fb-login-button" data-scope="public_profile,email" data-onlogin="fbLoggedIn()" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="false" type="submit"></div>
+                        </div>
+                        <!-- /form -->
+                        <div class="title">OR</div>
+                        <div class="bottom-text">Create a <a href="/signup/">New Account</a></div>
+                    </div>
+                </div>
+                {% endif %}
+                <!-- /Header Account -->
+            </div>
+            <!-- /Header Links -->
+            <!-- Header Search -->
+            <div class="header-link header-search header-search">
+                <div class="exp-search">
+                    <form action="/buy/">
+                        <input class="exp-search-input " placeholder="Search here ..." type="text" name="keyword" id="keyword">
+                        <input class="exp-search-submit" type="submit">
+                        <span class="exp-icon-search header-link" style="display:none;"><i
+                                class="icon icon-magnify"></i></span>
+                        <span class="exp-search-close"><i class="icon icon-close"></i></span>
+                    </form>
+                </div>
+            </div>
+            <!-- /Header Search -->
+            <!-- Logo -->
+            <div class="header-logo">
+                <a href="/home/" title="Logo"><img src="https://gazef.s3.amazonaws.com/Swapit/images/roaster_logo.png" alt="Logo" style="padding-bottom: 8%;" /></a>
+            </div>
+            <!-- /Logo -->
+            <!-- Mobile Menu -->
+            <div class="mobilemenu dblclick">
+                <div class="mobilemenu-header">
+                    <div class="title">MENU</div>
+                    <a href="#" class="mobilemenu-toggle"></a>
+                </div>
+                <div class="mobilemenu-content">
+                    <ul class="nav">
+                        <li><a href="/home/">HOME</a></li>
+                        <li><a href="/buy/">BUY</a></li>
+                        <li><a href="/sell/" title="">SELL</a></li>
+                        <li><a href="/exchange/">EXCHANGE</a></li>
+                        <li><a href="/blog/">HIGHLIGHTS</a></li>
+                        <li><a href="/about/">ABOUT</a></li>
+                        <li><a href="/contact/">CONTACT US</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <!-- Mega Menu -->
+            <div class="megamenu fadein blackout">
+                <ul class="nav">
+                    <li class="simple--dropdown">
+                        <a href="/home/">HOME</a>
+                    </li>
+
+                    <li class="mega-dropdown">
+                        <span class="menu-label">{{discount_index.slug}}</span>
+                        <a href="/buy/" style="position: relative;top: -11px;">Buy </a>
+                        <div class="sub-menu">
+                            <div class="container">
+                                <div class="megamenu-categories column-6">
+                                    {% for category in categories %}
+                                    <!-- megamenu column -->
+                                    <div class="col">
+                                        {% if category.image and False %}
+                                        <a class="category-image" href="/buy/?category={{ category.id }}">
+                                            <img src="{{ category.image.url }}" alt="Category Image" />
+                                        </a>
+                                        {% endif %}
+                                        <div class="category-title">
+                                            <a href="/buy/?category={{ category.id }}">{{ category.name }}</a>
+                                        </div>
+                                        <ul class="category-links">
+                                            {% for subcategory in category.sorted_subcategories %}
+                                            <li><a href="/buy/?subcategory={{ subcategory.id }}">{{ subcategory.name }}</a>
+                                            </li>
+
+                                            {% endfor %}
+                                            <!-- <li><a href="/buy/?category={{ category.id }}&status=used">Pre-Owned {{ category.name }}</a></li>
+                                            <li><a href="/buy/?category={{ category.id }}&status=sale">Sale In {{ category.name }}</a></li>
+
+                                            
+                                   
+                                            <li><a href="/buy/?category={{ category.id }}&status=used">Pre-owned In {{ category.name }}</a></li> 
+                                            <li><a href="/buy/?category={{ category.id }}&status=sale">Sale In {{ category.name }}</a></li> -->
+
+                                        </ul>
+                                    </div>
+                                    <!-- /megamenu column -->
+                                   {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="simple--dropdown">
+                        <a href="/sell/" title="">SELL</a>
+                    </li>
+                    <li class="simple--dropdown">
+                        <a href="/exchange/" title="">EXCHANGE</a>
+
+                    </li>
+                    <!-- <li class="mega--dropdown"><a href="/blog/">HIGHLIGHTS</a></li> -->
+                    <li class="mega--dropdown"><a href="/about/">ABOUT</a></li>
+
+                    <!-- <li><a href="/contact/">CONTACT US</a></li> -->
+                    <!-- <li><a href="#" onclick="$('.exp-icon-search').click()">Search</a></li> -->
+
+                </ul>
+
+            </div>
+            <!-- /Mega Menu -->
+
+
+
+        </div>
+        <!-- <div class="container">
+        <div class="header-link header-search header-search">
+                <div class="exp-search exp-search-open">
+                    <form action="/buy/">
+                        <input class="exp-search-input " placeholder="Search here ..." type="text" name="keyword" id="keyword">
+                        <input class="exp-search-submit" type="submit">
+                        <span class="exp-icon-search"><i class="icon icon-magnify"></i></span>
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div> -->
+
+        <style>
+            @media screen and (max-width: 1399px) and (min-width: 992px) {}
+            
+            ul.nav {
+                margin-top: 5px !important;
+            }
+            
+            .header-link {
+                margin-top: 11px !important;
+                padding: 0 2px !important;
+            }
+            
+            .header-cart a {
+                margin-top: 17px;
+            }
+            
+            @media screen and (max-width: 991px) {
+                .icon-magnify {
+                    display: none;
+                }
+            }
+            /* .header-search{
+                float: none !important;
+                margin-top: unset !important;
+            }
+            .exp-search{
+                position: inherit !important;
+                height: 45px !important;
+            }
+            .exp-search.exp-search-open .exp-icon-search{
+                right: 0;
+            } */
+            
+            .navbar {
+                min-height: 40px;
+                /* padding-top: 11px; */
+            }
+            
+            .btn,
+            .btn-primary,
+            button.action,
+            .btn.focus,
+            .btn-primary.focus,
+            button.action.focus,
+            .btn:focus,
+            .btn-primary:focus,
+            button.action:focus,
+            .btn:active,
+            .btn-primary:active,
+            button.action:active {
+                background-color: #333;
+                border-color: #000;
+                border-radius: 4px;
+            }
+            
+            .btn:hover,
+            .btn-primary:hover,
+            button.action:hover {
+                background-color: transparent;
+                color: #000;
+                border-color: #000;
+            }
+            
+            .filter-col-content {
+                background: #fff;
+                padding: 30px;
+            }
+            
+            .sidebar-block.collapsed {
+                font-size: 12px;
+            }
+            
+            .sidebar-block .block-title {
+                font-size: 16px;
+                font-weight: 700;
+            }
+            
+            .toggle-arrow {
+                opacity: 0;
+            }
+            
+            a.category-block {
+                display: none;
+            }
+            
+            .product-variant-5 .product-item.large .product-item-label.label-new {
+                right: 10px;
+                left: auto;
+                border-radius: 4px;
+            }
+        </style>
+</header>
+
+<script>
+    var email;
+    var name;
+    var id;
+
+
+
+
+    function fbLoggedIn() {
+        FB.api('/me?fields=email,name', (data) => {
+            this.email = data.email;
+            this.name = data.name;
+            this.id = data.id;
+
+            console.log('this is data', data);
+
+            var token = '{{csrf_token}}';
+            $.ajax({
+                    headers: {
+                        "X-CSRFToken": token
+                    },
+                    url: 'https://swapitclothing.com/login-with-facebook/',
+                    method: "POST",
+                    data: {
+                        password: this.id,
+                        email: this.email,
+                        username: this.name
+                    }
+
+
+
+                })
+                .then(function(response) {
+                        console.log('ahmed success');
+                    },
+                    function(response) { // optional
+                        console.log('failed');
+                    });
+
+
+
+        });
+        setTimeout(() => {
+            location.reload(true);
+            window.location.href = 'https://swapitclothing.com/';
+
+
+        }, 5000);
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150431712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150431712-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+<!-- /Header -->

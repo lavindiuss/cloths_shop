@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit - About us</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/myStyle.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Nunito:400,700" rel="stylesheet">
+
+
+</head>
+
+<body class="boxed">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <img src="https://gazef.s3.amazonaws.com/Swapit/loading.gif" style="margin-top: -250px;margin-left: 135px;" />
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top"><i class="icon icon-arrow-up"></i></a>
+        <!-- /Back To Top -->
+    </div>
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+
+            {% include 'header.html' %}
+
+            <br> <br>
+
+            <main class="page-main">
+                <!-- <div class="block">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li><a href="index.html"><i class="icon icon-home"></i></a></li>
+                            <li>/<span>About us</span></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="block">
+                    <div class="container">
+                        <!-- <div class="title center">
+                            <h1>About Us</h1>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="block fullboxed parallax" data-parallax="scroll" data-image-src="https://gazef.s3.amazonaws.com/Swapit/images/block-bg-1.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="https://gazef.s3.amazonaws.com/Swapit/images/swapit_logo.png" alt class="img-responsive" />
+
+                                <div class="" style="margin-top:50px">
+                                    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSK_nLPUyr7NGihR1MkH5z1COHYFI9SKs"></script> -->
+
+                                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIW0B_E3g-Yg533xy3yF0WHThi-mFvSNQ "></script>
+
+                                    <script type="text/javascript">
+                                        // When the window has finished loading create our google map below
+                                        google.maps.event.addDomListener(window, 'load', init);
+
+                                        function init() {
+                                            // Basic options for a simple Google Map
+                                            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                                            var mapOptions = {
+                                                zoom: 14,
+                                                scrollwheel: false,
+                                                center: new google.maps.LatLng(30.023271560668945, 31.46380043029785), // Seiko
+
+                                                // How you would like to style the map. 
+                                                // This is where you would paste any style found on Snazzy Maps.
+                                                styles: [{
+                                                    "featureType": "administrative",
+                                                    "elementType": "labels.text.fill",
+                                                    "stylers": [{
+                                                        "color": "#444444"
+                                                    }]
+                                                }, {
+                                                    "featureType": "landscape",
+                                                    "elementType": "all",
+                                                    "stylers": [{
+                                                        "color": "#f2f2f2"
+                                                    }]
+                                                }, {
+                                                    "featureType": "poi",
+                                                    "elementType": "all",
+                                                    "stylers": [{
+                                                        "visibility": "off"
+                                                    }]
+                                                }, {
+                                                    "featureType": "road",
+                                                    "elementType": "all",
+                                                    "stylers": [{
+                                                        "saturation": -100
+                                                    }, {
+                                                        "lightness": 45
+                                                    }]
+                                                }, {
+                                                    "featureType": "road.highway",
+                                                    "elementType": "all",
+                                                    "stylers": [{
+                                                        "visibility": "simplified"
+                                                    }]
+                                                }, {
+                                                    "featureType": "road.highway",
+                                                    "elementType": "geometry.fill",
+                                                    "stylers": [{
+                                                        "color": "#ffffff"
+                                                    }]
+                                                }, {
+                                                    "featureType": "road.arterial",
+                                                    "elementType": "labels.icon",
+                                                    "stylers": [{
+                                                        "visibility": "off"
+                                                    }]
+                                                }, {
+                                                    "featureType": "transit",
+                                                    "elementType": "all",
+                                                    "stylers": [{
+                                                        "visibility": "off"
+                                                    }]
+                                                }, {
+                                                    "featureType": "water",
+                                                    "elementType": "all",
+                                                    "stylers": [{
+                                                        "color": "#dde6e8"
+                                                    }, {
+                                                        "visibility": "on"
+                                                    }]
+                                                }]
+                                            };
+
+                                            // Get the HTML DOM element that will contain your map 
+                                            // We are using a div with id="map" seen below in the <body>
+                                            var mapElement = document.getElementById('googleMap');
+
+                                            // Create the Google Map using our element and options defined above
+                                            var map = new google.maps.Map(mapElement, mapOptions);
+                                            var markers = [
+                                                ['SWAPIT', 30.023271560668945, 31.46380043029785],
+                                                // ['Palace of Westminster, London', 51.499633, -0.124755]
+                                            ];
+
+                                            for (i = 0; i < markers.length; i++) {
+                                                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                                                // bounds.extend(position);
+                                                marker = new google.maps.Marker({
+                                                    position: position,
+                                                    map: map,
+                                                    title: markers[i][0]
+                                                });
+                                                // Info Window Content
+                                                var infoWindowContent = [
+                                                    ['<div class="info_content">' +
+                                                        '<h3>Swapit clothing</h3>' +
+                                                        '<p>Alnarges 1 villa 3, 5th Satelment, new Cairo, Cairo, Egypt.</p>' +
+                                                        '</div>'
+                                                    ]
+                                                    // ,
+                                                    // ['<div class="info_content">' +
+                                                    //     '<h3>Swapit Branch 2</h3>' +
+                                                    //     '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+                                                    //     '</div>'
+                                                    // ]
+                                                ];
+
+                                                var infoWindow = new google.maps.InfoWindow(),
+                                                    marker, i;
+
+                                                // Allow each marker to have an info window    
+                                                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                                                    return function() {
+                                                        infoWindow.setContent(infoWindowContent[i][0]);
+                                                        infoWindow.open(map, marker);
+                                                    }
+                                                })(marker, i));
+
+                                                // // Automatically center the map fitting all markers on the screen
+                                                // map.fitBounds(bounds);
+                                            }
+                                            // // Let's also add a marker while we're at it
+                                            // var marker = new google.maps.Marker({
+                                            //     position: new google.maps.LatLng(30.044281, 31.340002),
+                                            //     map: map,
+                                            //     title: 'Seiko'
+                                            // });
+                                        }
+                                    </script>
+                                    <!-- The element that will contain our Google Map. This is Pre-owned in both the Javascript and CSS above. -->
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-wrapper text-lg">
+                                    <style>
+                                        .text-lg h2 {
+                                            margin-bottom: 5px;
+                                        }
+                                        
+                                        .text-lg p {
+                                            margin-bottom: 40px;
+                                        }
+                                    </style>
+                                    <h2>Who we are</h2>
+                                    <p>SWAPIT crew members are day dreamers who always think about how to make your life stress-free especially for your look and your pocket. We created the first hassle free online shop where you could find your favorite
+                                        brands clothing under one roof, with the best quality and most affordable prices. </p>
+                                    <h2>Our Aim</h2>
+                                    <p>Our aim is to create a unique shopping experience as we offer the best prices around & the best qualities at the market. We can hear every voice inside you complaining about the high prices, quality and other issues
+                                        that bothers your shopping hobby. So, we presented the rooster as the fire fighter of your fashion life and saver of your money. </p>
+                                    <h2>What we do?</h2>
+                                    <p>We help you “Buy, Sell, Exchange” well-known brand clothing with a perfect condition to fit your look and your pocket. You will find the best deals/offers and we will also give you the chance to freshen up your entire
+                                        wardrobe with some easy steps.   </p>
+                                    <h2 style="font-weight: bold; font-style: italic;">“BUY”:</h2>
+                                    <p>You can shop our collection on our website, you will find different categories to shop from with a wide variety of clothes and well known worldwide brands.</p>
+                                    <h2 style="font-weight: bold; font-style: italic;">“Sell & Exchange”:</h2>
+                                    <p>It's simple:
+                                        <br>
+                                        <br> 1. Check and rearrange your closet. Prepare all the clothes that you don't use but still in a very good condition. (Remember that tommy T-shirt or those pair of Guess jeans?).
+                                        <br> 2. Contact us through our Website/Facebook/Instagram page or via WhatsApp to send us the size, brand name and picture of your item(s).
+                                        <br> 3. One of our team will contact you and an estimated value of your item(s) will be calculated.
+                                        <br> 4. Then, you have two options;
+                                        <br>
+
+                                        <ul>
+                                            <li><span style="font-weight: bold; font-style: italic;">“Sell”</span> your item(s) for cash credit “Credit Voucher” with A 6 month’s validity on our collection.</li>
+                                            <li><span style="font-weight: bold; font-style: italic;">“Exchange”</span> your item(s) with any item(s) from our collection with best offers.</li>
+
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        We sell both New and Preloved/Pre-owned clothes with an excellent condition and reasonable prices.
+                                    </p>
+                                    <p>
+                                        We assure you that our preloved/Pre-owned items will arrive as if it’s new. How?
+                                    </p>
+                                    <ul>
+                                        <li>Our products go through strong sterilization, washing and ironing processes by using sterilization machine and specialized products.</li>
+                                        <li>A team of roosters check every inch of the product to assure high quality and that the item is intact.</li>
+                                        <li>Our pack will stun you!! So just keep it!! </li>
+
+                                    </ul>
+                                    <h2>What’s more?</h2>
+                                    <p>Who needs a shopping friend when you have SWAPIT?! Our team will help you pick and grab the best that suits you. We will give you all the needed tips of the latest trends and styles. We will get you ready and covered
+                                        whatever the occasion is and even with your last-minute decisions.</p>
+
+                                    <h2>Why us?</h2>
+                                    <p>SWAPIT will be your fashion hub.
+                                        <ul>
+                                            <li>We will assure a wide variety of clothes and well known worldwide brands to shop from.</li>
+                                            <li>We have the best prices at the market.</li>
+                                            <li>We deliver your order to your doorstep in a unique packaging that you will instantly fall in love with.</li>
+                                        </ul>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block bg white">
+                    <div class="container">
+                        <div class="title center">
+                            <h2>Brands</h2>
+                        </div>
+                        <div class="brand-grid">
+                            {% for brand in brands %}
+                            <a href="/buy/?brand={{ brand.id }}" class="brand-item">
+                                <img src="{{ brand.logo.url }}" alt="Brand Logo">
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col-md-4 col-lg-6">
+                                <div class="collapsed-mobile">
+                                    <!-- Blog Carousel -->
+                                    <div class="title">
+                                        <h2>Easy Now?</h2>
+
+
+                                        It’s easier than ever to sell your clothes to swapit with our Sell via WhatsApp. Request a pre-paid shipping bag, choose whether you’d like a cash back credit to buy from our collections now or later!! We’re able to purchase from you– and let us know
+                                        if you have more clothes that you like to donate. Our pre-paid shipping bag will be at your door in days, ready to fill up with gently Pre-owned, on-trend clothing.
+                                    </div>
+                                    <div class="collapsed-content">
+                                        <div class="blog-carousel">
+                                            {% for article in blog %}
+                                            <!-- Blog Carousel Item -->
+                                            <div class="blog-item">
+                                                <a href="/article/?id={{ article.id }}" class="blog-item-photo">
+                                                    <img class="product-image-photo" src="{{ article.image.url }}" alt="From Blog">
+                                                </a>
+                                                <div class="blog-item-info">
+                                                    <a href="blog.html" class="blog-item-title"> {{ article.title }} </a>
+                                                    <div class="blog-item-teaser"> {{ article.section_set.first.text|truncatewords:30 }} </div>
+                                                    <div class="blog-item-links">
+                                                        <span class="pull-left">
+                                                            <span>
+                                                                <a href="/article/?id={{ article.id }}" class="readmore">Read more</a>
+                                                            </span>
+                                                        </span>
+                                                        <span class="pull-right">
+                                                            <span><a href="#">Comments</a></span>
+                                                        <span>Post by <a href="#">{{ article.author }}</a></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /Blog Carousel Item -->
+                                            {% endfor %}
+                                        </div>
+                                        <!-- /Blog Carousel -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-4 col-lg-4">
+                                <div class="">
+                                    <!-- Deal Carousel -->
+                                    <div class="title">
+                                        <h2 class="custom-color">Deal of the day</h2>
+                                        <div class="toggle-arrow"></div>
+                                        <div class="carousel-arrows"></div>
+                                    </div>
+                                    <div class="collapsed-content">
+                                        <div class="deal-carousel products-grid product-variant-1">
+                                            {% for product in deals %}
+                                            <!-- Product Item -->
+                                            <div class="product-item large">
+                                                <div class="product-item-inside">
+                                                    {% if product.sale_valid %}
+                                                    <!-- Product Label -->
+                                                    <div class="product-item-label label-sale"><span>-{{ product.discount_percentage }}%</span></div>
+                                                    <!-- /Product Label -->
+                                                    {% endif %}
+
+                                                    <a name="product{{ product.id }}"></a>
+
+                                                    <div class="product-item-info">
+                                                        <!-- Product Photo -->
+                                                        <div class="product-item-photo">
+                                                            <!-- product inside carousel -->
+                                                            <div class="carousel-inside slide" data-ride="carousel">
+                                                                <div class="carousel-inner">
+                                                                    {% for image in product.image_set.all %} {% if forloop.counter == 1 %}
+                                                                    <div class="item active">
+                                                                        <a href="/product/?id={{ product.id }}">
+                                                                            <img class="product-image-photo" src="{{ image.image.url }}" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    {% else %}
+                                                                    <div class="item">
+                                                                        <a href="/product/?id={{ product.id }}">
+                                                                            <img class="product-image-photo" src="{{ image.image.url }}" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    {% endif %} {% endfor %}
+                                                                </div>
+                                                                {% if product.image_set.count > 1 %}
+                                                                <a class="carousel-control next"></a>
+                                                                <a class="carousel-control prev"></a>
+                                                                {% endif %}
+                                                            </div>
+                                                            <!-- /product inside carousel -->
+                                                            <!-- Product Actions -->
+                                                            <div class="product-item-actions">
+                                                                <div class="actions-primary">
+                                                                    <button class="btn btn-sm btn-invert add-to-cart"> <i class="icon icon-cart"></i><span>Add to Cart</span> </button>
+                                                                </div>
+                                                                <div class="actions-secondary">
+                                                                    <a href="#" class="sharing" title="Link">
+                                                                        <i class="icon icon-share"></i>
+                                                                    </a>
+                                                                    <a href="/wishlist_add/?id={{ product.id }}&redirect={{ request.get_full_path }}#product{{ product.id }}" title="Wish List" class="wishlist">
+                                                                        <i class="icon icon-heart"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <ul class="social-list">
+                                                                    <li>
+                                                                        <a href="#" class="icon icon-google google"></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="icon icon-fancy fancy"></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- /Product Actions -->
+                                                        </div>
+                                                        <!-- /Product Photo -->
+                                                        <!-- Product Details -->
+                                                        <div class="product-item-details">
+                                                            <div class="product-item-name"> <a title="Slide effect" href="/product/?id={{ product.id }}" class="product-item-link">{{ product.name }}</a> </div>
+                                                            <div class="product-item-description">{{ product.description }}</div>
+                                                            <div class="price-box">
+                                                                <span class="price-container">
+                                                                    <span class="price-wrapper">
+                                                                        {% if product.sale_valid %}
+                                                                        <span class="old-price">${{ product.discounted_price }}</span> {% endif %}
+                                                                <span class="special-price">${{ product.price }}</span>
+                                                                </span>
+                                                                </span>
+                                                            </div>
+                                                            <!-- Product Actions -->
+                                                            <div class="product-item-actions">
+                                                                <div class="actions-primary">
+                                                                    <a href="/add_to_cart/?id={{ product.id }}&redirect={{ request.get_full_path }}">
+                                                                        <button class="btn foot-wear-bg">
+                                                                            <i class="icon icon-cart"></i>
+                                                                            <span>Add to Cart</span>
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /Product Actions -->
+                                                        </div>
+                                                        <!-- /Product Details -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /Product Item -->
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <!-- /Deal Carousel -->
+                                </div>
+                                <div class="newsletter variant1 collapsed-mobile">
+                                    <div class="title">
+                                        <h2>Newsletter</h2>
+                                        <div class="toggle-arrow"></div>
+                                    </div>
+                                    <div class="collapsed-content">
+                                        <!-- input-group -->
+                                        <form action="#">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                                <span class="input-group-btn">
+													<button class="btn btn-default" type="submit"><i class="icon icon-close-envelope"></i></button>
+													</span>
+                                            </div>
+                                        </form>
+                                        <!-- /input-group -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-4 col-lg-2">
+                                <div class="collapsed-mobile">
+                                    <div class="title">
+                                        <h2>Contact</h2>
+                                        <div class="toggle-arrow"></div>
+                                    </div>
+                                    <div class="collapsed-content">
+                                        <ul class="contact-list">
+                                            <li>
+                                                <h3><i class="icon icon-location-pin"></i>ADDRESS</h3>
+                                                <div>Alnarges 1 villa 3, 5th Satelment, new Cairo, Cairo, Egypt.</div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-close-envelope"></i>Email</h3>
+                                                <div><a href="mailto:info@swapitclothing.com">info@swapitclothing.com</a></div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-phone"></i>PHONE</h3>
+                                                <div><a href="call:+201000792748">01000swapit (792748) </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-facebook-logo"></i>FACEBOOK</h3>
+                                                <div><a href="https://www.facebook.com/swapitclothing">https://www.facebook.com/swapitclothing</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3><i class="icon icon-instagram"></i>INSTAGRAM</h3>
+                                                <div><a href="https://www.instagram.com/swapitclothing">https://www.instagram.com/swapitclothing</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            {% include 'footer.html' %}
+        </div>
+        <!-- Page Content -->
+    </div>
+    <!-- ProductStack -->
+    <div class="productStack disable hide_on_scroll"> <a href="#" class="toggleStack"><i class="icon icon-cart"></i> (6) items</a>
+        <div class="productstack-content">
+            <div class="products-list-wrapper">
+                <ul class="products-list">
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-10.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a href="#" class="action edit" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-11.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-12.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-13.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-14.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-15.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-cart">
+                <button type="button" class="btn" title="Checkout"> <span>Checkout</span> </button>
+                <button type="button" class="btn" title="Go to Cart"> <span>Go to Cart</span> </button>
+            </div>
+            <div class="total-cart">
+                <div class="items-total">Items <span class="count">6</span></div>
+                <div class="subtotal">Subtotal <span class="price">2.150</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- /ProductStack -->
+
+    <!-- Modal Quick View -->
+    <div class="modal quick-view zoom" id="quickView">
+        <div class="modal-dialog">
+            <div class="modalLoader-wrapper">
+                <div class="modalLoader bg-striped"></div>
+            </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10006;</button>
+            </div>
+            <div class="modal-content">
+                <iframe></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Quick View -->
+
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150431712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150431712-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>

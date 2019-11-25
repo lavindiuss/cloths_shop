@@ -1,0 +1,86 @@
+.header-logo{
+    margin: 5px;
+}
+@media screen and (max-width: 1399px) and (min-width: 992px){
+.navbar .nav > li > a, .navbar .nav > li > a:focus {
+    font-size: 20px !important;
+}
+}
+.foot-wear{
+    color:#09c100 !important;
+}
+.foot-wear-bg{
+    background-color:#09c100 !important;
+    border: 1px solid #09c100 !important;
+}
+.foot-wear-bg:hover{
+    background-color:white !important;
+    color:#09c100 !important;
+}
+
+.sports-wear{
+    color:#32CD32 !important;
+}
+.sports-wear-bg{
+    background-color:#32CD32 !important;
+    border: 1px solid #32CD32 !important;
+}
+.sports-wear-bg:hover{
+    background-color:white !important;
+    color:#32CD32 !important;
+}
+
+.outter-wear{
+    color:#c40030 !important;
+}
+.outter-wear-bg{
+    background-color:#c40030 !important;
+    border:1px solid #c40030 !important;
+}
+.outter-wear-bg:hover{
+    background-color:#fff !important;
+    color:#c40030 !important;
+}
+
+.formal-wear{
+    color:#951b80 !important;
+}
+.formal-wear-bg{
+    background-color:#951b80 !important;
+    border: 1px solid #951b80 !important;
+}
+.formal-wear-bg:hover{
+    background-color:#fff !important;
+    color: #951b80 !important;
+
+}
+
+
+.bottom-wear{
+    color: #0020a7 !important;
+}
+.bottom-wear-bg{
+    background-color: #0020a7 !important;
+    border:1px solid #0020a7 !important;
+}
+.bottom-wear-bg:hover{
+    background-color: #fff !important;
+    color:#0020a7 !important;
+}
+
+
+.top-wear{
+    color: #fae100 !important;
+}
+.top-wear{
+    background-color: #fae100 !important;
+}
+.custom-color{
+    color:#0020a7 !important;
+}
+.custom-color-bg{
+    background-color:#0020a7 !important;
+}
+body{
+    font-family: 'Zilla Slab', sans-serif !important;
+}

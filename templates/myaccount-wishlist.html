@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit - My Wishlist</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Nunito:400,700" rel="stylesheet">
+
+
+
+</head>
+
+<body class="boxed">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <img src="https://gazef.s3.amazonaws.com/Swapit/loading.gif" style="margin-top: -250px;margin-left: 135px;" />
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top"><i class="icon icon-arrow-up"></i></a>
+        <!-- /Back To Top -->
+    </div>
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+            <!-- Header -->
+            <!-- {% include 'header.html' %} -->
+            <!-- /Header -->
+            <!-- Sidebar -->
+            <!-- <div class="sidebar-wrapper">
+                <div class="sidebar-top"><a href="#" class="slidepanel-toggle"><i class="icon icon-left-arrow-circular"></i></a></div>
+                <ul class="sidebar-nav">
+                    <li> <a href="index.html">HOME</a> </li>
+                    <li> <a href="gallery.html">GALLERY</a> </li>
+                    <li> <a href="blog.html">BLOG</a> </li>
+                    <li> <a href="category-fixed-sidebar.html">SHOP</a> </li>
+                    <li> <a href="faq.html">FAQ</a> </li>
+                    <li> <a href="contact.html">CONTACT</a> </li>
+                </ul>
+                <div class="sidebar-bot">
+                    <div class="share-button toTop">
+                        <span class="toggle"></span>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="icon icon-google google"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-fancy fancy"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-pinterest pinterest"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-twitter-logo twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon icon-facebook-logo facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <!-- /Sidebar -->
+            <!-- Page Content -->
+            <main class="page-main">
+                <div class="block">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li><a href="index.html"><i class="icon icon-home"></i></a></li>
+                            <li>/<span>My Dashboard</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+                        <div class="page-title">
+                            <div class="title">
+                                <h1>My.. Dashboard</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="white-sideblock">
+                                    <ul class="category-list">
+                                        <li><a href="myaccount-details.html">Account Details</a></li>
+                                        <!-- <li><a href="myaccount-adresses.html">My Addresses</a></li> -->
+                                        <li class="active"><a href="#">My Wishlist</a></li>
+                                        <li><a href="myaccount-history.html">My Order History</a></li>
+                                    </ul>
+                                </div>
+                                <div class="divider divider-lg"></div>
+                            </div>
+                            <div class="col-md-9">
+                                <h2>My WishList</h2>
+                                <div class="cart-table cart-table--sm">
+                                    <div class="table-header">
+                                        <div class="photo">
+                                            Product Image
+                                        </div>
+                                        <div class="name">
+                                            Product Name
+                                        </div>
+                                        <div class="price">
+                                            Product Price
+                                        </div>
+                                        <div class="remove"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="photo">
+                                            <a href="product.html"><img src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="product.html">Boyfriend Short</a>
+                                        </div>
+                                        <div class="price">
+                                            EGP 85.00
+                                        </div>
+                                        <div class="remove">
+                                            <a href="#"><span>Remove</span><i class="icon icon-close-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="photo">
+                                            <a href="product.html"><img src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="product.html">Floral Print Top</a>
+                                        </div>
+                                        <div class="price">
+                                            $156.00
+                                        </div>
+                                        <div class="remove">
+                                            <a href="#"><span>Remove</span><i class="icon icon-close-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="photo">
+                                            <a href="product.html"><img src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="product.html">Mens Denim Jackets</a>
+                                        </div>
+                                        <div class="price">
+                                            $99.00
+                                        </div>
+                                        <div class="remove">
+                                            <a href="#"><span>Remove</span><i class="icon icon-close-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="photo">
+                                            <a href="product.html"><img src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="product.html">Boyfriend Short</a>
+                                        </div>
+                                        <div class="price">
+                                            $85.00
+                                        </div>
+                                        <div class="remove">
+                                            <a href="#"><span>Remove</span><i class="icon icon-close-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="photo">
+                                            <a href="product.html"><img src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="product.html">Floral Print Top</a>
+                                        </div>
+                                        <div class="price">
+                                            $156.00
+                                        </div>
+                                        <div class="remove">
+                                            <a href="#"><span>Remove</span><i class="icon icon-close-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="photo">
+                                            <a href="product.html"><img src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="product.html">Mens Denim Jackets</a>
+                                        </div>
+                                        <div class="price">
+                                            $99.00
+                                        </div>
+                                        <div class="remove">
+                                            <a href="#"><span>Remove</span><i class="icon icon-close-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </main>
+            <!-- /Page Content -->
+            <!-- Footer -->
+            <footer class="page-footer variant1">
+                <div class="container">
+                    <div class="under-footer">
+                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/banners/footer-banner.jpg" alt="Footer Banner" class="img-responsive"></a>
+                    </div>
+                    <div class="footer-bot">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="footer-logo">
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/logo-footer-small.png" alt="Footer Logo"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-social"> <a href="#" data-tooltip="Facebook"><i class="icon icon-facebook-logo icon-circled"></i></a> <a href="#" data-tooltip="Twitter"><i class="icon icon-twitter-logo icon-circled"></i></a>
+                                        <a href="#" data-tooltip="Skype"><i class="icon icon-skype-logo icon-circled"></i></a> <a href="#" data-tooltip="Vimeo"><i class="icon icon-vimeo icon-circled"></i></a> </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-payment-link">
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-1.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-2.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-3.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-4.png" alt=""></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="after-footer">
+                        <div class="footer-copyright text-center"> © 2016 Demo Store. All Rights Reserved. </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- /Footer -->
+        </div>
+        <!-- Page Content -->
+    </div>
+    <!-- ProductStack -->
+    <div class="productStack disable hide_on_scroll"> <a href="#" class="toggleStack"><i class="icon icon-cart"></i> (6) items</a>
+        <div class="productstack-content">
+            <div class="products-list-wrapper">
+                <ul class="products-list">
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-10.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a href="#" class="action edit" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-11.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-12.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-13.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-14.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product.html" title="Product Name Long Name"><img class="product-image-photo" src="https://gazef.s3.amazonaws.com/Swapit/images/products/product-15.jpg" alt=""></a> <span class="item-qty">3</span>
+                        <div class="actions"> <a class="action edit" href="#" title="Edit item"><i class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i class="icon icon-trash-alt"></i></a>
+                            <div class="edit-qty">
+                                <input type="number" value="3">
+                                <button type="button" class="btn">Apply</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-cart">
+                <button type="button" class="btn" title="Checkout"> <span>Checkout</span> </button>
+                <button type="button" class="btn" title="Go to Cart"> <span>Go to Cart</span> </button>
+            </div>
+            <div class="total-cart">
+                <div class="items-total">Items <span class="count">6</span></div>
+                <div class="subtotal">Subtotal <span class="price">2.150</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- /ProductStack -->
+
+    <!-- Modal Quick View -->
+    <div class="modal quick-view zoom" id="quickView">
+        <div class="modal-dialog">
+            <div class="modalLoader-wrapper">
+                <div class="modalLoader bg-striped"></div>
+            </div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10006;</button>
+            </div>
+            <div class="modal-content">
+                <iframe></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Quick View -->
+
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+
+
+</body>
+
+</html>

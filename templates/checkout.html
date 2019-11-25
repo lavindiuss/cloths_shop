@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swapit | Checkout</title>
+    <meta name="author" content="BigSteps">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://gazef.s3.amazonaws.com/Swapit/images/roaster.png">
+
+    <!-- Vendor -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/darktooltip.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/animate.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/style.css" rel="stylesheet">
+    <link href="https://gazef.s3.amazonaws.com/Swapit/css/megamenu.css" rel="stylesheet">
+
+    <!-- Color Schemes -->
+    <!-- your style-color.css here  -->
+
+
+    <!-- Icon Font -->
+    <link href="https://gazef.s3.amazonaws.com/Swapit/fonts/icomoon-reg/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Nunito:400,700" rel="stylesheet">
+
+
+
+</head>
+
+<body class="boxed">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <img src="https://gazef.s3.amazonaws.com/Swapit/loading.gif" style="margin-top: -250px;margin-left: 135px;" />
+    </div>
+    <!-- /Loader -->
+    <div class="fixed-btns">
+        <!-- Back To Top -->
+        <a href="#" class="top-fixed-btn back-to-top"><i class="icon icon-arrow-up"></i></a>
+        <!-- /Back To Top -->
+    </div>
+    <div id="wrapper">
+        <!-- Page -->
+        <div class="page-wrapper">
+            {% include 'header.html' %}
+
+            <br><br><br><br>
+            <!-- Page Content -->
+            <main class="page-main">
+                <div class="block">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li><a href="/home/"><i class="icon icon-home"></i></a></li>
+                            <li>/<span>Checkout</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="container">
+
+                        <form class="white" action="/place_order/" method="get">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2>Billing Details</h2>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-6">
+                                            <label for="country">Country<span class="required">*</span></label>
+                                            <div class="select-wrapper">
+                                                <input type="text" class="form-control" name="country" id="country" oninput="update_local('country');">
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="col-sm-6">
+                                            <label for="province">State/Province <span class="required">*</span></label>
+                                            <div class="select-wrapper">
+                                                <input type="text" class="form-control" name="province" id="province" oninput="update_local('province');">
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="first_name">First Name<span class="required">*</span></label>
+                                            <input type="text" required class="form-control" name="first_name" id="first_name" value="{{ request.user.first_name }}" oninput="update_local('first_name');">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="last_name">Last Name<span class="required">*</span></label>
+                                            <input type="text" required class="form-control" name="last_name" id="last_name" value="{{ request.user.last_name }}" oninput="update_local('last_name');">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="email">E-mail<span class="required">*</span></label>
+                                            <input type="text" required class="form-control" name="email" id="email" value="{{ request.user.email }}" oninput="update_local('email');">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="phone">Phone Number<span class="required">*</span></label>
+                                            <input type="text"  required class="form-control" name="phone" id="phone" oninput="update_local('phone');">
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="city">Town / City<span class="required">*</span></label>
+                                            <input type="text" required class="form-control" name="city" id="city" oninput="update_local('city');">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="address">Full Address</label>
+                                            <input type="text" required class="form-control" name="address" id="address" oninput="update_local('address');">
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <label for="postcode">Postcode / Zip<span class="required">*</span></label>
+                                            <input type="text" class="form-control" name="postcode" id="postcode" oninput="update_local('postcode');">
+                                        </div> -->
+                                    </div>
+
+                                    <!-- <label for="company">Company Name</label>
+                                    <input type="text" class="form-control" name="company" id="company" oninput="update_local('company');"> -->
+
+                                    <h2>Payment & Order Review</h2>
+                                    <p>Cash on delivery</p>
+                                    <!-- <p class="payment-link">
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-1.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-2.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-3.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-4.png" alt=""></a>
+                                        <a href="#"><img src="https://gazef.s3.amazonaws.com/Swapit/images/payment-logo/icon-pay-5.png" alt=""></a>
+                                    </p> -->
+                                    <div class="row" style="display: none;">
+                                        <div class="col-sm-6">
+                                            <label>Credit Card Number<span class="required">*</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3">
+                                            <label>Month<span class="required">*</span></label>
+                                            <div class="select-wrapper">
+                                                <select class="form-control">
+													<option value="">01</option>
+													<option value="">02</option>
+													<option value="">03</option>
+													<option value="">04</option>
+													<option value="">05</option>
+													<option value="">06</option>
+													<option value="">07</option>
+													<option value="">08</option>
+													<option value="">09</option>
+													<option value="">10</option>
+													<option value="">11</option>
+													<option value="">12</option>
+												</select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-3">
+                                            <label>Year<span class="required">*</span></label>
+                                            <div class="select-wrapper">
+                                                <select class="form-control">
+													<option value="">2017</option>
+													<option value="">2018</option>
+													<option value="">2019</option>
+													<option value="">2020</option>
+													<option value="">2021</option>
+												</select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>Your Order</h2>
+                                    <div class="cart-table cart-table--sm">
+                                        <div class="table-header">
+                                            <div class="photo">
+                                                Product Image
+                                            </div>
+                                            <div class="name">
+                                                Product Name
+                                            </div>
+                                            <div class="price">
+                                                Unit Price
+                                            </div>
+                                            <div class="qty">
+                                                Qty
+                                            </div>
+                                            <div class="subtotal">
+                                                Subtotal
+                                            </div>
+                                        </div>
+                                        {% for item in cart %}
+                                        <div class="table-row">
+                                            <div class="photo">
+                                                <a href="/product/?id={{ item.product.id }}"><img src="{{ item.product.image_set.first.image.url }}" alt=""></a>
+                                            </div>
+                                            <div class="name">
+                                                <a href="/product/?id={{ item.product.id }}">{{ item.product.name }}</a>
+                                            </div>
+                                            <div class="price">
+                                                EGP {{ item.unit_price }}
+                                            </div>
+                                            <div class="qty">
+                                                1
+                                            </div>
+                                            <div class="subtotal">
+                                                EGP {{ item.unit_price }}
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <table class="total-price">
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>EGP {{ cart.summary }}</td>
+                                        </tr>
+                                        {% if promocode %}
+                                        <tr>
+                                            <td>Discount</td>
+                                            <td>EGP {{ discount }}</td>
+                                        </tr>
+                                        {% endif %}
+
+                                        <tr>
+                                            <td>Shipping</td>
+                                            <td>EGP 60</td>
+                                        </tr>
+
+                                        <tr class="total">
+                                            <td>Grand Total</td>
+                                            <td>EGP {{ new_total }}</td>
+                                        </tr>
+                                    </table>
+                                    <div class="clearfix"></div>
+                                    <h2>Order Notes</h2>
+                                    <label for="note">Notes about your order, e.g. special notes for delivery</label>
+                                    <textarea class="form-control" name="note" id="note"></textarea>
+                                    <div>
+                                        <!-- .first_name  -->
+                                        {% if request.user%}
+                                        <button class="btn btn-alt" type="submit">PLACE ORDER</button> {% else %}
+                                        <a class="btn btn-alt" href="/signup/">Signup to Place Order</a> {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </main>
+            <!-- /Page Content -->
+
+            {% include 'footer.html' %}
+
+        </div>
+        <!-- Page Content -->
+    </div>
+    <script>
+        function navigate() {
+            setTimeout(() => {
+                window.location.href = "https://swapitclothing.com/thankyou/"
+            }, 3000);
+        }
+    </script>
+    <!-- jQuery Scripts  -->
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/jquery/jquery.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/swiper/swiper.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/slick/slick.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/parallax/parallax.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/magnificpopup/dist/jquery.magnific-popup.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/countdown/jquery.countdown.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/nouislider/nouislider.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/ez-plus/jquery.ez-plus.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/tocca/tocca.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/bootstrap-tabcollapse/bootstrap-tabcollapse.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/scrollLock/jquery-scrollLock.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/darktooltip/dist/jquery.darktooltip.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/vendor/instafeed/instafeed.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/megamenu.min.js"></script>
+    <script src="https://gazef.s3.amazonaws.com/Swapit/js/app.js"></script>
+    <script>
+        function update_local(id) {
+            var key = id;
+            var selector = '#' + id;
+            var value = $(selector).val();
+            localStorage.setItem(key, value);
+            console.log(localStorage.getItem(key));
+        }
+        $(function() {
+            for (var i = 0; i < localStorage.length; i++) {
+                $('#' + localStorage.key(i)).val(localStorage.getItem(localStorage.key(i)));
+            }
+        });
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150431712-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150431712-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '317801925667017'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317801925667017&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>
